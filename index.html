@@ -15,61 +15,69 @@
         <!------------- CUSTOM STYLESHEET ------------->
         <link rel="stylesheet" href="./styles/styles.css">
     </head>
-    <!----X---- .wrapper ----X---->
     
     
     
-    <!--------- Hamburger Menu Icon --------->
+    
+    
+    
+    <!----X---- .wrapper ----X---->    
+    <!--------- Hamburger Menu --------->
     <!--------- Social Media Icons --------->
     <body>
         <!--------- skip-link --------->
         <a href="#mainContent" class="skip-link"> Skip to the main content.</a>
         
         <header>
-            <h1 class="logo">Delicious</h1><!--------- .logo --------->
-            <!--------- Main Navigation --------->            
-            <nav class="navContainer"><!--------- .navContainer --------->
-                <ul navItemFlex><!--------- .navItemFlex --------->
-                    <li class="navItems">
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li class="navItems">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="navItems">
-                        <a href="#">Recipes</a>
-                    </li>
-                    <li class="navItems">
-                        <a href="#">Nutrition</a>
-                    </li>
-                    <li class="navItems">
-                        <a href="./blog">Blog</a>
-                    </li>
-                    <li class="navItems">
-                        <a href="#">Shop</a>
-                    </li>
-                    <li class="navItems">
-                        <a href="./contact">Contact</a>
-                    </li>
-                </ul><!----X---- .navItemFlex ----X---->
-            </nav><!----X---- .navContainer ----X---->
-            
-            <!--------- Shopping Cart --------->
-            <div class="shoppingCart">
-                <i class="fa-solid fa-bag-shopping"></i>
-                <div class="counter">
-                    <p class="counterNumber">2</p>
+            <div class="navContainer"><!--------- .navContainer --------->
+                <a href="" class="logo">
+                    <!--------- .logo --------->
+                    <h1 class="logo">Delicious</h1>
+                </a>
+                <!----X---- .logo ----X---->
+                <!--------- Main Navigation --------->
+                <nav class="navItemContainer"> <!--------- .navItemContainer --------->
+                    <ul navItemFlex><!--------- .navItemFlex --------->                        
+                        <li class="navItems">
+                            <a href="./index.html" class="navLinks">Home</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="#" class="navLinks">About</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="#" class="navLinks">Recipes</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="#" class="navLinks">Nutrition</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./blog" class="navLinks">Blog</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="#" class="navLinks">Shop</a>
+                        </li>
+                        <li class="navItems">
+                            <a href="./contact" class="navLinks">Contact</a>
+                        </li>
+                    </ul><!----X---- .navItemFlex ----X---->                    
+                </nav><!----X---- .navItemContainer ----X---->
+                
+                <div class="shoppingCart"><!--------- .shopping Cart --------->                    
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div class="counter">
+                        <p class="counterNumber">2</p>
+                    </div>
                 </div>
-            </div>            
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div><!----X---- .navContainer ----X---->            
         </header>
 
-        <main id="mainContent">
-            <section><!--------- Popular Recipes --------->
+        <main id="mainContent"><!--------- Main Content --------->
+            <section><!--------- Popular Recipes Section --------->
                 <div>
-                    <div class="RecipesFlex">
+                    <div>
                         <div class="RecipesContentFlex">
                             <h2>Most Popular Recipes</h2>
                             <p>Wallago squawfish ghoul, Indian mul climbing perch pencilfish snoek velvetfish scaleless black dragonfish. Warmouth
@@ -90,10 +98,10 @@
                         <img src="./assets/home-3-min.jpeg" alt="A bowl with some Lettuces">
                     </div>
 
-                    <div>
-                        <div><!--------- Vegetarian --------->
+                    <div class="foodMenu"><!--------- .foodMenu --------->
+                        <div class="foodMenuContent"><!--------- Vegetarian --------->
                             <i class="fa-solid fa-lemon"></i>
-                            <div>
+                            <div class="vegetarianContent">
                                 <h3>Vegetarian</h3>
                                 <p>Fall cherry bomb pepper delightful blueberry scones blueberries Malaysian udon noodles green grapes matcha lemon
                                     tahini
@@ -104,7 +112,7 @@
                             </div>
                         </div><!----X---- Vegetarian ----X---->
 
-                        <div><!--------- Appetizers --------->
+                        <div class="foodMenuContent"><!--------- Appetizers --------->
                             <i class="fa-solid fa-utensils"></i>
                             <div>
                                 <h3>Appetizers</h3>
@@ -117,7 +125,7 @@
                             </div>
                         </div><!----X---- Appetizers ----X---->
                         
-                       <div><!--------- Desserts --------->
+                       <div class="foodMenuContent"><!--------- Desserts --------->
                             <i class="fa-solid fa-mug-saucer"></i>
                             <div>
                                 <h3>Desserts</h3>
@@ -129,7 +137,7 @@
                             </div>
                        </div><!----X---- Desserts ----X---->
 
-                        <div><!--------- Drinks --------->
+                        <div class="foodMenuContent"><!--------- Drinks --------->
                             <i class="fa-solid fa-martini-glass-empty"></i>
                             <div>
                                 <h3>Drinks</h3>
@@ -140,7 +148,7 @@
                             </div>
                         </div><!----X---- Drinks ----X---->
 
-                        <div><!--------- Salads --------->
+                        <div class="foodMenuContent"><!--------- Salads --------->
                             <i class="fa-solid fa-leaf"></i>
                             <div>                                
                                 <h3>Salads</h3>
@@ -152,8 +160,8 @@
                                 </p>
                             </div>                            
                         </div><!----X---- Salads ----X---->
-                        
-                        <div><!--------- Side Dishes --------->
+
+                        <div class="foodMenuContent"><!--------- Side Dishes --------->
                             <i class="fa-solid fa-spoon"></i>
                             <div>
                                 <h3>Side Dishes</h3>
@@ -165,28 +173,21 @@
                                 </p>
                             </div>
                         </div> <!----X---- Side Dishes ----X---->
-                    </div>
+                    </div><!----X---- .foodMenu ----X---->
                 </div>
             </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <section class="ourRestaurants"><!--------- .ourRestaurants --------->
+                <div>
+                    <img src="./assets/home-circle-text-min.png" alt="Fancy food place stamp">
+                    <img src="./assets/home-4-min.jpeg" alt="Brown dinning tables and chairs">
+                </div>
+                 <h2>Our Restaurants</h2>
+                 <p>Hearts of palm simmer peanut butter crunch summer fiery fruit green bowl strawberries fresh green grapes coconut milk
+                seasonal mediterranean vegetables. Naga viper lime mango crisp pasta second course lavender lemonade mediterranean
+                tempeh earl grey latte kimchi dark chocolate chili blackberries appetizer main course cinnamon lime muffins shiitake
+                mushrooms basil seitan bananas.</p>
+            </section>
         </main>        
     </body>
 </html>
