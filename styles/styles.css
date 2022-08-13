@@ -257,6 +257,7 @@ h2,
 h3,
 h4 {
   font-family: "Raleway", sans-serif;
+  font-weight: 700;
   margin: 0;
   color: #2E2E2E;
   text-transform: uppercase;
@@ -267,9 +268,17 @@ h1 {
   font-size: 2.3rem;
 }
 
+h2,
+h3 {
+  line-height: 36px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-size: 0.9rem;
+}
+
 .counterNumber {
-  font-size: 10px;
-  font-size: 0.5rem;
+  font-size: 12px;
+  font-size: 0.6rem;
   font-weight: bold;
   margin: 0;
 }
@@ -282,6 +291,21 @@ h1 {
   color: #2E2E2E;
   font-size: 16px;
   font-size: 0.8rem;
+}
+
+.popularRecipes p {
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+
+.recipesContent a.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  font-size: 0.7rem;
 }
 
 .wrapper {
@@ -307,6 +331,30 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  bottom: -8px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 20%;
+  background: rgb(132, 190, 45);
+  /* animation */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.underline:hover:after {
+  width: 45%;
+  background: orange;
 }
 
 .navbar {
@@ -389,4 +437,55 @@ header {
 }
 header .wrapper {
   min-width: 95%;
+}
+
+.popularRecipes .recipesContainerFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.popularRecipes .recipesContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+.popularRecipes .recipesContent p {
+  text-align: center;
+  padding: 25px 60px;
+}
+.popularRecipes .recipesContent a {
+  background-color: rgb(132, 190, 45);
+  padding: 14px 30px;
+}
+.popularRecipes .recipeImg {
+  width: 50%;
+}
+
+.foodMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+.foodMenu i {
+  color: #333333;
+}
+
+.foodMenuContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

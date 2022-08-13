@@ -21,3 +21,36 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+
+// CSS Underline pseudo styles
+//  Boudi   https: //codepen.io/elb96/pen/aXKXBx
+
+   .underline {
+       
+       position: relative;
+   }
+
+   .underline:after {
+       position: absolute;
+       content: '';
+       height: 3px;     
+       bottom: -8px;
+       margin: 0 auto;
+       left: 0;
+       right: 0;
+       width: 20%;
+       background:rgb(132, 190, 45);
+
+       /* animation */
+       -o-transition: .5s;
+       -ms-transition: .5s;
+       -moz-transition: .5s;
+       -webkit-transition: .5s;
+       transition: .5s;
+   }
+
+   .underline:hover:after {
+       width: 45%;
+       background: orange;
+   }

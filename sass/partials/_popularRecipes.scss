@@ -1,0 +1,48 @@
+.popularRecipes{
+
+    .recipesContainerFlex {
+        display: flex;   
+    }
+    
+    .recipesContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+
+        p {
+            text-align: center;
+            padding: 25px 60px;
+        }
+
+        a {
+            background-color: rgb(132, 190, 45);
+            padding: 14px 30px;
+        }
+
+
+    }
+
+    .recipeImg {
+        width: 50%;
+        
+    }
+}
+
+.foodMenu {
+    display: flex;   
+    flex-wrap: wrap;
+    width: 50%;
+
+
+    i {
+        color: $secondary;
+    }
+}
+
+.foodMenuContent {
+    display: flex;
+    
+}
