@@ -1,0 +1,53 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-size: $baseFontSize;    
+    font-family: $secondaryFont;
+    color: $quarternary;    
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $primaryFont;
+    margin: 0;
+    color: $primary;
+    text-transform: uppercase
+}
+
+h1 {
+    @include fontSize(46);    
+}
+
+.counterNumber {    
+    @include fontSize(10);
+    font-weight: bold;
+    margin: 0;     
+}
+
+
+
+.navItemFlex {
+        color: $primary;
+        
+        .navItems a {
+                text-transform: uppercase;
+                color: $primary; 
+                @include fontSize(16);
+            }
+    }
+
+
+
+
+
+
+
+
+
+
+
+

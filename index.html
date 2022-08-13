@@ -16,55 +16,66 @@
         <link rel="stylesheet" href="./styles/styles.css">
     </head>
    
-    <body>
+    <body>        
         <!--------- skip-link --------->
-        <a href="#mainContent" class="skip-link"> Skip to the main content.</a>
-        
+        <a href="#mainContent" class="skip-link"> Skip to the main content.</a>        
         <header>
-            <div class="navContainer"><!--------- .navContainer --------->
-                <a href="" class="logo"><!--------- .logo --------->
-                    <h1 class="logo">Delicious</h1>
-                </a><!----X---- .logo ----X---->                
-                <!--------- Main Navigation --------->
-                <nav class="navItemContainer"> <!--------- .navItemContainer --------->
-                    <ul navItemFlex><!--------- .navItemFlex --------->                        
-                        <li class="navItems">
-                            <a href="./index.html" class="navLinks">Home</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">About</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">Recipes</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">Nutrition</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="./blog.html" class="navLinks">Blog</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">Shop</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="./contact.html" class="navLinks">Contact</a>
-                        </li>
-                    </ul><!----X---- .navItemFlex ----X---->  
+                            <!--------- Main Navigation --------->
+            <div class="wrapper">
+                <nav class="navbar"><!--------- .navContainer --------->                   
+                    <a href="./index.html" class="logo"><!--------- .logo --------->                       
+                        <h1 class="logo">Delicious</h1>
+                    </a><!----X---- .logo ----X---->
+
+                    <div class="navContainer">
+                        <ul class="navItemFlex">
+                            <!--------- .navItemFlex --------->
+                            <li class="navItems">
+                                <a href="./index.html" class="navLinks">Home</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">About</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">Recipes</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">Nutrition</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="./blog.html" class="navLinks">Blog</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">Shop</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="./contact.html" class="navLinks">Contact</a>
+                            </li>                   
+                        </ul>
+                        <!----X---- .navItemFlex ----X---->
+                         <div class="shoppingBag">
+                             <a href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                             </a>
+
+                             <div class="counter">
+                                <p class="counterNumber">2</p>
+                             </div>
+                         </div>
+                    
+                        <div class="search">
+                            <a href="#"> 
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>                
+
                     <!-- <div class="hamburgerMenu">        >--------- Hamburger Menu ---------<
-                        
-                    </div>                   -->
-                </nav><!----X---- .navItemContainer ----X---->
+                                    
+                                </div>                   -->
+                </nav><!----X---- .navContainer ----X---->
                 
-                <div class="shoppingCart"><!--------- .shopping Cart --------->                    
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <div class="counter">
-                        <p class="counterNumber">2</p>
-                    </div>
-                </div>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div><!----X---- .navContainer ----X---->            
+            </div>            
         </header>
 
         <main id="mainContent"><!--------- Main Content --------->

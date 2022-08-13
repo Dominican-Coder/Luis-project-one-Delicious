@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;   
+    
+    .navItemFlex {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;         
+    }
+
+    .navContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 6px;        
+    }
+    
+    .shoppingBag {
+        position: relative;  
+    }
+
+    .counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;            
+        position: absolute;
+        top: 50%;
+        left: 58%;
+        background-color: rgb(132, 190, 45);
+        color: $quarternary;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+    }
+
+    .shoppingBag i,
+    .search i {
+        padding: 10px 5px;
+        color: $primary;
+
+        
+    }
+
+    .search {
+        margin-left: 14px;
+        
+    }
+
+    a {
+        padding: 8px 10px;
+        border: none;
+
+        &:hover,
+        &:focus {
+            color: rgb(132, 190, 45);
+
+        }
+    }
+
+        
+}
