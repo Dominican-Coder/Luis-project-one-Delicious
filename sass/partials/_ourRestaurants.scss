@@ -1,0 +1,39 @@
+.ourRestaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;     
+        width: 72%; 
+
+        h2 {
+            margin-top: 46px;
+        }
+
+        p {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+
+    }
+
+    .stamp {
+        width: 12%;
+        height:23%;
+        position: absolute;
+        top: 66px;
+        left:60.9%;
+    }
+
+    .foodCourtImg {
+        width: 51%;
+    }
+}

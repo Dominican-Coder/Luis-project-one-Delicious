@@ -23,20 +23,32 @@ h1 {
     @include fontSize(46);    
 }
 
+h2 {
+    @include fontSize(25);
+}
+
+h3 {
+    @include fontSize(18);
+}
+
 h2,
 h3 {
     line-height: 36px;
-    letter-spacing: 0.5px;  
-    @include fontSize(18);     
+    letter-spacing: 0.5px;          
 }
 
-.counterNumber {    
-    @include fontSize(12);
+ p {
+     line-height: 24px;
+     letter-spacing: 0.3px;
+     color: $tertiary;
+ }
+
+.counterNumber {  
+    color: $quarternary;
     font-weight: bold;
     margin: 0;     
+    @include fontSize(10);
 }
-
-
 
 .navItemFlex {
         color: $primary;
@@ -46,18 +58,7 @@ h3 {
                 color: $primary; 
                 @include fontSize(16);
             }
-    }
-
-
-    .popularRecipes {
-        
-        p {
-            line-height: 24px;
-            letter-spacing: 0.3px;
-            color: $tertiary;
-        }
-
-    }
+    }   
 
     .recipesContent {
 
@@ -67,7 +68,13 @@ h3 {
             text-transform: uppercase;
             letter-spacing: 0.6px;
             @include fontSize(14);
+        }
+    }
 
+    .foodMenu {
+
+        i {
+            @include fontSize(42);
         }
     }
 

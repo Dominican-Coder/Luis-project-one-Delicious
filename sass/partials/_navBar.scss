@@ -21,17 +21,16 @@
         position: relative;  
     }
 
-    .counter {
+    .counter p {
         display: flex;
         justify-content: center;
         align-items: center;            
         position: absolute;
         top: 50%;
         left: 58%;
-        background-color: rgb(132, 190, 45);
-        color: $quarternary;
-        width: 22px;
-        height: 22px;
+        background-color: rgb(132, 190, 45);        
+        width: 18px;
+        height: 18px;
         border-radius: 50%;
     }
 

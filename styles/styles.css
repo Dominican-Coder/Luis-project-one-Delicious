@@ -268,19 +268,34 @@ h1 {
   font-size: 2.3rem;
 }
 
-h2,
+h2 {
+  font-size: 25px;
+  font-size: 1.25rem;
+}
+
 h3 {
-  line-height: 36px;
-  letter-spacing: 0.5px;
   font-size: 18px;
   font-size: 0.9rem;
 }
 
+h2,
+h3 {
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+
 .counterNumber {
-  font-size: 12px;
-  font-size: 0.6rem;
+  color: #F6F6F6;
   font-weight: bold;
   margin: 0;
+  font-size: 10px;
+  font-size: 0.5rem;
 }
 
 .navItemFlex {
@@ -293,12 +308,6 @@ h3 {
   font-size: 0.8rem;
 }
 
-.popularRecipes p {
-  line-height: 24px;
-  letter-spacing: 0.3px;
-  color: #999999;
-}
-
 .recipesContent a.btn {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -306,6 +315,16 @@ h3 {
   letter-spacing: 0.6px;
   font-size: 14px;
   font-size: 0.7rem;
+}
+
+.foodMenu i {
+  font-size: 42px;
+  font-size: 2.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -394,7 +413,7 @@ ul {
 .navbar .shoppingBag {
   position: relative;
 }
-.navbar .counter {
+.navbar .counter p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,9 +427,8 @@ ul {
   top: 50%;
   left: 58%;
   background-color: rgb(132, 190, 45);
-  color: #F6F6F6;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
 }
 .navbar .shoppingBag i,
@@ -473,19 +491,67 @@ header .wrapper {
 }
 
 .foodMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   width: 50%;
+  background-color: #F6F6F6;
 }
 .foodMenu i {
   color: #333333;
+  margin: 4px 20px 0 0;
 }
 
 .foodMenuContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.ourRestaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+.ourRestaurants div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 72%;
+}
+.ourRestaurants div h2 {
+  margin-top: 46px;
+}
+.ourRestaurants div p {
+  margin-top: 30px;
+  text-align: center;
+}
+.ourRestaurants .stamp {
+  width: 12%;
+  height: 23%;
+  position: absolute;
+  top: 66px;
+  left: 60.9%;
+}
+.ourRestaurants .foodCourtImg {
+  width: 51%;
 }
