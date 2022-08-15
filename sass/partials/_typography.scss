@@ -78,6 +78,35 @@ h3 {
         }
     }
 
+    .hungryClients {
+
+        p {
+            color: $secondary;
+            @include fontSize(24);
+        }
+
+        i {
+            color: $solidWhite;
+            @include fontSize(42);
+        }
+        
+        .slider {
+            
+            a {
+           color: $solidWhite;
+           font-weight: bold;
+           @include fontSize(24);
+           
+           .prev {
+               color:$quarternary;
+           }
+        }
+        
+                   
+     }
+           
+    }
+
 
 
 
