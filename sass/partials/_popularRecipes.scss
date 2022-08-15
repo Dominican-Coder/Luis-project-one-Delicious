@@ -18,8 +18,15 @@
         }
 
         a {
-            background-color: rgb(132, 190, 45);
+            background-color: $quinary;
             padding: 14px 30px;
+
+            &:hover,
+            &:focus {
+                background-color: $septenary;
+                color: $quinary;
+
+            }
         }
 
 

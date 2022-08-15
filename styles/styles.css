@@ -342,7 +342,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -486,6 +486,10 @@ header .wrapper {
   background-color: rgb(132, 190, 45);
   padding: 14px 30px;
 }
+.popularRecipes .recipesContent a:hover, .popularRecipes .recipesContent a:focus {
+  background-color: rgba(184, 182, 182, 0.3647058824);
+  color: rgb(132, 190, 45);
+}
 .popularRecipes .recipeImg {
   width: 50%;
 }
@@ -519,7 +523,7 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
+  min-height: 98vh;
   position: relative;
 }
 .ourRestaurants div {
@@ -547,11 +551,22 @@ header .wrapper {
 }
 .ourRestaurants .stamp {
   width: 12%;
-  height: 23%;
+  height: 21%;
   position: absolute;
-  top: 66px;
+  top: 69px;
   left: 60.9%;
 }
 .ourRestaurants .foodCourtImg {
   width: 51%;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.gallery ul li {
+  width: 33.3333333333%;
 }

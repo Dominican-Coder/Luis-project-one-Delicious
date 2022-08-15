@@ -1,0 +1,14 @@
+.gallery {
+
+    ul {
+        display: flex;
+        flex-wrap: wrap; 
+        
+        li {
+            width: calc(100% / 3);
+            
+        }
+    }
+
+
+}
