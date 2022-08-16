@@ -3,6 +3,13 @@
     justify-content: space-between;
     padding-top: 20px;   
     
+    .navContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 6px;        
+    }
+
     .navItemFlex {
         display: flex;
         flex: 1;
@@ -10,12 +17,6 @@
         align-items: center;         
     }
 
-    .navContainer {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 6px;        
-    }
     
     .shoppingBag {
         position: relative;  
@@ -54,7 +55,6 @@
         &:hover,
         &:focus {
             color: rgb(132, 190, 45);
-
         }
     }
 

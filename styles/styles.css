@@ -255,7 +255,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin: 0;
@@ -284,6 +285,14 @@ h3 {
   letter-spacing: 0.5px;
 }
 
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 p {
   line-height: 24px;
   letter-spacing: 0.3px;
@@ -310,7 +319,7 @@ p {
 
 .recipesContent a.btn {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   font-size: 14px;
@@ -318,28 +327,55 @@ p {
 }
 
 .foodMenu i {
-  font-size: 42px;
-  font-size: 2.1rem;
+  font-size: 30px;
+  font-size: 1.5rem;
+}
+.foodMenu h3 {
+  font-size: 18px;
+  font-size: 0.9rem;
+}
+.foodMenu p {
+  font-size: 14px;
+  font-size: 0.7rem;
 }
 
-.hungryClients p {
+.hungryClients .wrapper p {
   color: #333333;
+  line-height: 36px;
+  letter-spacing: 0.6px;
   font-size: 24px;
   font-size: 1.2rem;
 }
-.hungryClients i {
+.hungryClients .wrapper i {
   color: #ffffff;
   font-size: 42px;
   font-size: 2.1rem;
 }
-.hungryClients .slider a {
+.hungryClients .wrapper .slider a {
   color: #ffffff;
   font-weight: bold;
   font-size: 24px;
   font-size: 1.2rem;
 }
-.hungryClients .slider a .prev {
+.hungryClients .wrapper .slider a .prev {
   color: #F6F6F6;
+}
+
+footer h4,
+footer h5 {
+  color: #F6F6F6;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-size: 0.9rem;
+}
+footer h4 {
+  color: rgb(132, 190, 45);
+}
+footer p,
+footer li {
+  font-size: 14px;
+  font-size: 0.7rem;
 }
 
 * {
@@ -349,17 +385,12 @@ p {
 
 .wrapper {
   max-width: 1300px;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
 }
 
 a {
   display: inline-block;
-  color: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 img {
@@ -394,7 +425,7 @@ ul {
 
 .underline:hover:after {
   width: 45%;
-  background: orange;
+  background: rgba(238, 36, 154, 0.74);
 }
 
 .navbar {
@@ -405,6 +436,18 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
+}
+.navbar .navContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 6px;
 }
 .navbar .navItemFlex {
   display: -webkit-box;
@@ -418,18 +461,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.navbar .navContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 6px;
 }
 .navbar .shoppingBag {
   position: relative;
@@ -516,18 +547,28 @@ header .wrapper {
 }
 
 .foodMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50%;
   background-color: #F6F6F6;
 }
 .foodMenu i {
   color: #333333;
-  margin: 4px 20px 0 0;
+  padding: 0 20px;
 }
 
 .foodMenuContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 20px;
 }
 
 .ourRestaurants {
@@ -594,6 +635,10 @@ header .wrapper {
 
 .hungryClients {
   min-height: 70vh;
+  background-color: rgba(207, 236, 44, 0.438);
+}
+.hungryClients .wrapper {
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,15 +652,12 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(207, 236, 44, 0.438);
 }
 .hungryClients p {
-  text-align: center;
-  max-width: 70%;
+  width: 88%;
   margin-top: 48px;
+  text-align: center;
   position: relative;
-  line-height: 36px;
-  letter-spacing: 0.6px;
 }
 .hungryClients p i.fa-quote-left {
   position: absolute;
@@ -636,4 +678,17 @@ header .wrapper {
           justify-content: space-between;
   min-width: 5%;
   margin-top: 60px;
+}
+
+footer {
+  background-color: #333333;
+  height: 61vh;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 25%;
+  height: inherit;
+  border: red solid 2px;
 }

@@ -1,0 +1,20 @@
+footer {
+    background-color:$secondary;
+    height: 61vh;
+
+    .wrapper {
+        display: flex;
+        min-width: calc(100% / 4);
+        height: inherit;
+        
+        border:  red solid 2px;
+
+        // .recentPosts {
+
+        // }
+        
+    }
+
+
+
+}

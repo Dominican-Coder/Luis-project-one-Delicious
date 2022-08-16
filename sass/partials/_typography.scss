@@ -11,7 +11,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     font-family: $primaryFont;
     font-weight: 700;
     margin: 0;
@@ -35,6 +36,13 @@ h2,
 h3 {
     line-height: 36px;
     letter-spacing: 0.5px;          
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
 }
 
  p {
@@ -64,7 +72,7 @@ h3 {
 
         a.btn {
             font-family: $primaryFont;
-            font-weight: 400;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.6px;
             @include fontSize(14);
@@ -74,37 +82,70 @@ h3 {
     .foodMenu {
 
         i {
-            @include fontSize(42);
+            @include fontSize(30);
+        }
+
+        h3 {
+            @include fontSize(18);
+        }
+        
+        p {
+            @include fontSize(14);
+
         }
     }
 
     .hungryClients {
 
-        p {
-            color: $secondary;
-            @include fontSize(24);
-        }
+        .wrapper {
 
-        i {
-            color: $solidWhite;
-            @include fontSize(42);
-        }
-        
-        .slider {
+            p {
+                    color: $secondary;
+                    line-height: 36px;
+                    letter-spacing: 0.6px;
+                    @include fontSize(24);
+                }
             
-            a {
-           color: $solidWhite;
-           font-weight: bold;
-           @include fontSize(24);
-           
-           .prev {
-               color:$quarternary;
-           }
+                i {
+                    color: $solidWhite;
+                    @include fontSize(42);
+                }
+            
+                .slider {
+            
+                    a {
+                        color: $solidWhite;
+                        font-weight: bold;
+                        @include fontSize(24);
+                        
+                        .prev {
+                            color: $quarternary;
+                        }
+                    }
+            
+            
+                }
+            }
+            
         }
         
-                   
-     }
-           
+        footer {         
+            h4,
+            h5 {
+                color: $quarternary;               
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                @include fontSize(18);            
+            }
+
+            h4 {
+                color: rgb(132, 190, 45);                
+            }
+
+            p,
+            li {
+                @include fontSize(14);
+            }
     }
 
 
