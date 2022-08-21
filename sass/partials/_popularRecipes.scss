@@ -1,16 +1,19 @@
-.popularRecipes{
+.popularRecipes {
+
+    .wrapper {
+        width: 100%;
+    }
 
     .recipesContainerFlex {
         display: flex;   
     }
-    
+        
     .recipesContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 50%;
-
 
         p {
             text-align: center;
@@ -28,8 +31,6 @@
 
             }
         }
-
-
     }
 
     .recipeImg {
@@ -48,16 +49,21 @@
     .colunm {
                
     }
-    
-
 
     i {
         color: $secondary;
-        padding: 0 20px;
+        padding: 0 19px;
+
+        &.fa-mug-saucer {
+            padding-left: 15px;
+            padding-right: 13px;    
+        }
+
+        &.fa-leaf {
+            padding-left: 15px;
+            padding-right: 13px;
+        }
     }
-
-
-
 }
 
 .foodMenuContent {

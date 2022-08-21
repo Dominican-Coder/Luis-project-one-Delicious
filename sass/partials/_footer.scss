@@ -1,20 +1,116 @@
 footer {
     background-color:$secondary;
-    height: 61vh;
+    color: $tertiary;  
+    padding-top: 4rem;   
 
-    .wrapper {
-        display: flex;
-        min-width: calc(100% / 4);
-        height: inherit;
-        
-        border:  red solid 2px;
+    .wrapper { 
+        // width: 80%;       
+        display: flex;        
+        .footerColumn {
+            flex-basis: 250px;
+            flex-grow: 1;
+            padding-right: 30px;
 
-        // .recentPosts {
 
-        // }
-        
+            .contentBoder {
+                width: 85%;
+                line-height: 25px;
+                border-bottom: 1px solid $septenary;
+                padding-bottom: 14px; 
+                padding-top: 8px;        
+            }
+
+            adress {
+                a:last-child {
+                    padding-top: 8px;
+                }
+            }
+
+            a,
+            span {
+                display: block;
+            }
+
+            a:hover,
+            a:focus {
+            color: $quinary;
+            }
+
+            .footerHeading {
+                margin-bottom: 2rem;
+            }
+
+            .socialMedia {
+                display: flex; 
+                width: 75%;
+                margin-top: 20px; 
+                border-top: 1px solid $septenary;
+
+                li {       
+
+                    a {
+                        font-size: 16px;
+                        color: $quarternary;
+                        padding: 2px 15px;
+                
+                        &:hover,
+                        &:focus {
+                            color: $quinary;             
+                        }                       
+                    }
+
+                    a:first-child {
+                        padding-left: 0;
+                    }
+
+                    
+                }        
+            }       
+        }
+
+        .subscribe {
+            padding-right: 0; 
+
+            
+            p {
+                padding-bottom: 20px;
+                width: 274px;
+            }
+
+            form {
+                display: flex;
+                input[type=email] {
+                    width: 150px;
+                    border: none;
+                    background-color: $septenary;
+                    
+                }                
+            }
+
+                .fa-right-long {
+                    height: 35px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                button[type=submit] {
+                    width: 32px;
+                    border: none;
+                    background-color: $quinary;                   
+                    
+                }
+        }
+
     }
 
+    .copyright{
+        height: 55px;
+        background-color: $primary;
 
-
+        p {
+            padding: 8px 160px 0;
+        }
+    }
 }

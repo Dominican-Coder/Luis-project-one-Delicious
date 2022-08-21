@@ -19,160 +19,189 @@
     <body>
         <a href="#mainContent" class="skip-link"> Skip to the main content.</a>
         <header class="contactHeader">
-            <div class="navContainer"><!--------- .navContainer --------->                
-                <a href="" class="logo"><!--------- .logo --------->
-                    <h1 class="logo">Delicious</h1>
-                </a><!----X---- .logo ----X---->
-                
-                <!--------- Main Navigation --------->
-                <nav class="navItemContainer"><!--------- .navItemContainer --------->                    
-                    <ul navItemFlex><!--------- .navItemFlex --------->                        
-                        <li class="navItems">
-                            <a href="./index.html" class="navLinks">Home</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">About</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">Recipes</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">Nutrition</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="./blog" class="navLinks">Blog</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="#" class="navLinks">Shop</a>
-                        </li>
-                        <li class="navItems">
-                            <a href="./contact" class="navLinks">Contact</a>
-                        </li>
-                    </ul><!----X---- .navItemFlex ----X---->
-                    
-                    <!-- <div class="hamburgerMenu">        >--------- Hamburger Menu ---------<
-                                
-                            </div>                   -->
-                </nav><!----X---- .navItemContainer ----X---->
-                
+            <!--------- Main Navigation --------->
+            <div class="wrapper">
+                <nav class="navbar">
+                    <!--------- .navContainer --------->
+                    <a href="./index.html" class="logo">
+                        <!--------- .logo --------->
+                        <h1 class="logo">Delicious</h1>
+                    </a>
+                    <!----X---- .logo ----X---->
         
-                <div class="shoppingCart"><!--------- .shopping Cart --------->
-                    
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <div class="counter">
-                        <p class="counterNumber">2</p>
+                    <div class="navContainer">
+                        <ul class="navItemFlex">
+                            <!--------- .navItemFlex --------->
+                            <li class="navItems">
+                                <a href="./index.html" class="navLinks">Home</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">About</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">Recipes</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">Nutrition</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="./blog.html" class="navLinks">Blog</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="#" class="navLinks">Shop</a>
+                            </li>
+                            <li class="navItems">
+                                <a href="./contact.html" class="navLinks">Contact</a>
+                            </li>
+                        </ul>
+                        <!----X---- .navItemFlex ----X---->
+                        <div class="shoppingBag">
+                            <a href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+        
+                            <div class="counter">
+                                <p class="counterNumber">2</p>
+                            </div>
+                        </div>
+        
+                        <div class="search">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </div><!----X---- .navContainer ----X---->            
+        
+                    <!-- <div class="hamburgerMenu">        >--------- Hamburger Menu ---------<
+                                            
+                                        </div>                   -->
+                </nav>
+                <!----X---- .navContainer ----X---->
+        
+            </div>
         </header>
 
-
         <main id="mainContent">
-            <section>
-                <div>
-                    <div class="contactForm">
+            <section class="contact">
+                <div class=" contactContent">
+                    <div class="formContainer">                  
                         <h2>Drop us a line</h2>
-                        <label for="name"></label>
-                        <input type="text" name="name" id="name" placeholder="Your Name">
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="Your Email">
-                        <label for="subject"></label>
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
-                        <label for="textArea"></label>
-                        <textarea name="textArea" id="textArea" cols="60" rows="8" placeholder="Message"></textarea>
-                        <button type="submit">Send Message<i class="fa-solid fa-right-long"></i></button>
+                        <form action="" method="" class=" contactForm">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email" placeholder="Your Email">
+                            <label for="subject"></label>
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                            <label for="textArea"></label>
+                            <textarea name="textArea" id="textArea" cols="60" rows="8" placeholder="Message"></textarea>
+                            <button type="submit">Send Message<i class="fa-solid fa-right-long"></i></button>
+                        </form>                      
+                        
                     </div>
 
-                    <div class="contactDetails">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus aut nam accusantium! Ipsam, quibusdam fugit voluptatem quaerat quisquam asperiores dolor sit amet consectetur.</p>
-                        <h4>Working Hour</h4>
-                        <p><span>Mon-Fri</span>: <time>08:00am</time> - <time>05:30pm</time></p>
-                        <p>Not working on Saturday or Sunday</p>
-                        <h4>Contact Info</h4>
-                        <adress>
-                            A delicious restaurant <span>Toronto, Ontario</span>
-                            <a href="mailto:yum@food.com">yum@food.com</a>
-                            <a href="tel:++1 234 567 8910">+1 234 567 8910</a>
-                        </adress>
+                    <div class="contactDetailsContainer"> 
+                        <div class="wrapper">
+                            <div class="contactDetails">
+                                <h3>contact details</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus aut nam accusantium! Ipsam,
+                                    quibusdam
+                                    fugit voluptatem quaerat quisquam asperiores dolor.
+                                </p>
+                            </div>
+                            <div>
+                                <h5>Working Hour</h5>
+                                <p><span class="weekDays">Mon-Fri</span>: <time>08:00am</time> - <time>05:30pm</time></p>
+                                <p>Not working on Saturday or Sunday !</p>
+                            </div>
+                            <div>
+                                <h5>Contact Info</h5>
+                                <adress>
+                                    <p>A delicious restaurant <span class="city">Toronto, Ontario</span></p>
+                                    <a href="mailto:yum@food.com">yum@food.com</a>
+                                    <a href="tel:++1 234 567 8910">+1 234 567 8910</a>
+                                </adress>
+                            </div>
+                        </div>                                     
                     </div> 
-                </div>
-                <div class="contactBackground"></div>            
-            </section>     
+                </div>   
+                <div class="contactBackground"></div>
+            </section> 
+               
         
             <footer>
                 <div class="wrapper">
-                    <div class="footerContact">
-                        <h4>Delicious</h4>
-                        <p>Lollipop I love I love donut lemon drops I love. Powder fruitcake shortbread dragée oat cake danish marshmallow
-                            jelly.
-                            Apple pie tiramisu gummies wafer icing. Bear claw danish halvah cotton candy sesame snaps.
+                    <div class="footerContact footerColumn">
+                        <h4 class="footerHeading">Delicious</h4>
+                        <p class="contentBoder">Lollipop I love I love donut lemon drops I love. Powder fruitcake marshmallow
+                            fromage cheesy grin.
                         </p>
-                        <adress>
-                            A delicious restaurant <span>Toronto, Ontario</span>
-                            <a href="mailto:yum@food.com">yum@food.com</a>
+                        <adress class="contentBoder">
+                            <p class="contentBoder">A delicious restaurant <span>Toronto, Ontario</span></p>
+                            <a href="mailto:yum@food.com" class="contentBoder">yum@food.com</a>
                             <a href="tel:++1 234 567 8910">+1 234 567 8910</a>
                         </adress>
                     </div>
-        
-                    <div>
-                        <h5>Recent Posts</h5>
+            
+                    <div class="recentPosts footerColumn">
+                        <h5 class="footerHeading">Recent Posts</h5>
                         <ul>
-                            <li>
-                                Cream cheese fromage cheesy grin
+                            <li class="contentBoder">
+                                Cream cheese grin fromage cheesy
+                            </li>
+                            <li class="contentBoder">
+                                Fromage cheesy cheese fromage
+                            </li>
+                            <li class="contentBoder">
+                                cheesy cream cheese fromage
+                            </li>
+                            <li class="contentBoder">
+                                cheese fromage cheese cheesy
+                            </li>
+                            <li class="contentBoder">
+                                Grin fromage cheese cheesy
                             </li>
                             <li>
-                                Fromage cheesy cream cheese fromage
-                            </li>
-                            <li>
-                                cheesy grin cream cheese fromage
-                            </li>
-                            <li>
-                                cream cheese fromage cheesy
-                            </li>
-                            <li>
-                                Grin fromage cream cheese cheesy
-                            </li>
-                            <li>
-                                Cheese cheesy fromage grin
+                                Cheese cheesy fromage cheese fromage
                             </li>
                         </ul>
                     </div>
-        
-                    <div class="subscribe">
-                        <h5>Subscribe Now</h5>
+            
+                    <div class="subscribe footerColumn">
+                        <h5 class="footerHeading">Subscribe Now</h5>
                         <p>Get all of our newest recipes immediately in your inbox!</p>
                         <form action="">
                             <label for="email"></label>
-                            <input type="email" name="email" id="email">
-                            <button type="submit"><i class="fa-solid fa-right-long"></i></button>
-                            <hr>
-                            <ul class="socialMedia">
-                                <!--------- Social Media Icons --------->
-        
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <input type="email" name="email" id="email" placeholder="Enter your email">
+                            <div class="submit">
+                                <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                            </div>
+            
                         </form>
+                        <ul class="socialMedia">
+                            <!--------- Social Media Icons --------->
+            
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="copyright">
-                        <p>Copyright &copy; 2015 by <span>Polar</span>. All Rights Reserved.</p>
-                    </div>
+                </div>
+                <!----X---- footer .wrapper ----X---->
+                <div class="copyright">
+                    <p>Copyrights &copy; 2015 by <span>Polar</span>. All Rights Reserved.</p>
                 </div>
             </footer>
         </main>        

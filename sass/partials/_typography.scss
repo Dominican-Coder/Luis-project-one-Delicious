@@ -42,7 +42,7 @@ a {
     color: inherit;
     cursor: pointer;
     text-decoration: none;
-    transition: .3s;
+    transition: 0.3s;
 }
 
  p {
@@ -101,6 +101,7 @@ a {
 
             p {
                     color: $secondary;
+                    font-style: italic;
                     line-height: 36px;
                     letter-spacing: 0.6px;
                     @include fontSize(24);
@@ -139,13 +140,108 @@ a {
             }
 
             h4 {
-                color: rgb(132, 190, 45);                
+                color: rgb(132, 190, 45);
+                @include fontSize(28);
             }
 
             p,
             li {
-                @include fontSize(14);
+                line-height: 44px;
+                letter-spacing: 0.3px;
+                @include fontSize(13);
             }
+
+            .subscribe {
+
+                p {
+                    line-height: 25px;
+                }
+
+                
+                form {
+                    font-size: 0;
+                    color: $secondary;
+
+                    input[type=email] {
+                        font-family: $secondaryFont;
+                        color: $solidWhite;                        
+                        padding-left: 12px; 
+                        
+                        &::placeholder {
+                            opacity: 0.3;
+                            @include fontSize(8);
+                        }
+
+                    }
+
+                    input[type=email],
+                    button[type=submit] {
+                        @include fontSize(13);            
+                    }
+                    
+                    button[type=submit] {                
+    
+                        .fa-right-long {                                  
+                            color: $quarternary;                     
+                            @include fontSize(15);
+                        }
+                    }
+                }
+
+            }
+            
+            adress {
+                a {
+                    @include fontSize(13);
+                }
+            }
+
+            .copyright {
+                p {
+                    font-family: $primaryFont;
+                    @include fontSize(10);
+                    
+                    span {
+                        text-transform: uppercase;
+                        color: $quinary;
+                    }
+                }
+            }
+    }
+    
+    .contactDetailsContainer {
+
+    
+        h3,
+        h5 {
+            letter-spacing: 0.5px;
+        }
+
+        p,
+        a {
+            color: $tertiary;
+            line-height: 22px;
+            letter-spacing: 0.3px;
+            @include fontSize(13);
+        }
+
+        span.weekDays{
+            color: $secondary;
+            font-family: $primaryFont;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        span.city {
+            display: block;
+        }
+
+        adress {
+
+            a {
+                display: block;                
+            }
+        }
     }
 
 

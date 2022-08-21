@@ -1,0 +1,64 @@
+.contactHeader {
+    min-height: 50vh;
+    background-image: url(../assets/contact-1-min.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact {
+    min-height: 100vh;
+
+    .contactContent {
+        display: flex;
+        height: 80vh;
+        
+    
+        .formContainer {
+            display: flex;
+            
+            width: 65%;
+
+            
+        }
+    
+        .contactDetailsContainer {            
+            width: 35%;
+            background-color: $quarternary;
+            padding-left: 30px;
+
+            .wrapper {
+                margin-left: 0;
+            }
+
+            div {
+                max-width: 60%;                   
+            }
+
+            .contactDetails {
+                max-width: 100%;
+
+                h3 {
+                    padding: 48px 0 20px;
+                }
+            }
+
+            h5 {
+                padding: 30px 0 15px;
+            }
+
+            adress {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 120px;
+            }
+        }
+    }
+
+    .contactBackground {
+        height: 56vh;
+        background-image: url(../assets/contact-2-min.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+}

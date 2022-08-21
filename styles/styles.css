@@ -341,6 +341,7 @@ p {
 
 .hungryClients .wrapper p {
   color: #333333;
+  font-style: italic;
   line-height: 36px;
   letter-spacing: 0.6px;
   font-size: 24px;
@@ -371,11 +372,100 @@ footer h5 {
 }
 footer h4 {
   color: rgb(132, 190, 45);
+  font-size: 28px;
+  font-size: 1.4rem;
 }
 footer p,
 footer li {
-  font-size: 14px;
-  font-size: 0.7rem;
+  line-height: 44px;
+  letter-spacing: 0.3px;
+  font-size: 13px;
+  font-size: 0.65rem;
+}
+footer .subscribe p {
+  line-height: 25px;
+}
+footer .subscribe form {
+  font-size: 0;
+  color: #333333;
+}
+footer .subscribe form input[type=email] {
+  font-family: "Lora", serif;
+  color: #ffffff;
+  padding-left: 12px;
+}
+footer .subscribe form input[type=email]::-webkit-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+  font-size: 0.4rem;
+}
+footer .subscribe form input[type=email]::-moz-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+  font-size: 0.4rem;
+}
+footer .subscribe form input[type=email]:-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+  font-size: 0.4rem;
+}
+footer .subscribe form input[type=email]::-ms-input-placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+  font-size: 0.4rem;
+}
+footer .subscribe form input[type=email]::placeholder {
+  opacity: 0.3;
+  font-size: 8px;
+  font-size: 0.4rem;
+}
+footer .subscribe form input[type=email],
+footer .subscribe form button[type=submit] {
+  font-size: 13px;
+  font-size: 0.65rem;
+}
+footer .subscribe form button[type=submit] .fa-right-long {
+  color: #F6F6F6;
+  font-size: 15px;
+  font-size: 0.75rem;
+}
+footer adress a {
+  font-size: 13px;
+  font-size: 0.65rem;
+}
+footer .copyright p {
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  font-size: 0.5rem;
+}
+footer .copyright p span {
+  text-transform: uppercase;
+  color: rgb(132, 190, 45);
+}
+
+.contactDetailsContainer h3,
+.contactDetailsContainer h5 {
+  letter-spacing: 0.5px;
+}
+.contactDetailsContainer p,
+.contactDetailsContainer a {
+  color: #999999;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  font-size: 13px;
+  font-size: 0.65rem;
+}
+.contactDetailsContainer span.weekDays {
+  color: #333333;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.contactDetailsContainer span.city {
+  display: block;
+}
+.contactDetailsContainer adress a {
+  display: block;
 }
 
 * {
@@ -509,6 +599,9 @@ header .wrapper {
   min-width: 95%;
 }
 
+.popularRecipes .wrapper {
+  width: 100%;
+}
 .popularRecipes .recipesContainerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +654,15 @@ header .wrapper {
 }
 .foodMenu i {
   color: #333333;
-  padding: 0 20px;
+  padding: 0 19px;
+}
+.foodMenu i.fa-mug-saucer {
+  padding-left: 15px;
+  padding-right: 13px;
+}
+.foodMenu i.fa-leaf {
+  padding-left: 15px;
+  padding-right: 13px;
 }
 
 .foodMenuContent {
@@ -615,8 +716,8 @@ header .wrapper {
   width: 12%;
   height: 21%;
   position: absolute;
-  top: 69px;
-  left: 60.9%;
+  top: 107px;
+  left: 56.2%;
 }
 .ourRestaurants .foodCourtImg {
   width: 51%;
@@ -661,12 +762,12 @@ header .wrapper {
 }
 .hungryClients p i.fa-quote-left {
   position: absolute;
-  left: -6.8%;
+  left: -5.8%;
   top: -8px;
 }
 .hungryClients p i.fa-quote-right {
   position: absolute;
-  right: -6.8%;
+  right: -5.8%;
   top: 75px;
 }
 .hungryClients .slider {
@@ -682,13 +783,163 @@ header .wrapper {
 
 footer {
   background-color: #333333;
-  height: 61vh;
+  color: #999999;
+  padding-top: 4rem;
 }
 footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 25%;
-  height: inherit;
-  border: red solid 2px;
+}
+footer .wrapper .footerColumn {
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 30px;
+}
+footer .wrapper .footerColumn .contentBoder {
+  width: 85%;
+  line-height: 25px;
+  border-bottom: 1px solid rgba(184, 182, 182, 0.3647058824);
+  padding-bottom: 14px;
+  padding-top: 8px;
+}
+footer .wrapper .footerColumn adress a:last-child {
+  padding-top: 8px;
+}
+footer .wrapper .footerColumn a,
+footer .wrapper .footerColumn span {
+  display: block;
+}
+footer .wrapper .footerColumn a:hover,
+footer .wrapper .footerColumn a:focus {
+  color: rgb(132, 190, 45);
+}
+footer .wrapper .footerColumn .footerHeading {
+  margin-bottom: 2rem;
+}
+footer .wrapper .footerColumn .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin-top: 20px;
+  border-top: 1px solid rgba(184, 182, 182, 0.3647058824);
+}
+footer .wrapper .footerColumn .socialMedia li a {
+  font-size: 16px;
+  color: #F6F6F6;
+  padding: 2px 15px;
+}
+footer .wrapper .footerColumn .socialMedia li a:hover, footer .wrapper .footerColumn .socialMedia li a:focus {
+  color: rgb(132, 190, 45);
+}
+footer .wrapper .footerColumn .socialMedia li a:first-child {
+  padding-left: 0;
+}
+footer .wrapper .subscribe {
+  padding-right: 0;
+}
+footer .wrapper .subscribe p {
+  padding-bottom: 20px;
+  width: 274px;
+}
+footer .wrapper .subscribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .wrapper .subscribe form input[type=email] {
+  width: 150px;
+  border: none;
+  background-color: rgba(184, 182, 182, 0.3647058824);
+}
+footer .wrapper .subscribe .fa-right-long {
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .wrapper .subscribe button[type=submit] {
+  width: 32px;
+  border: none;
+  background-color: rgb(132, 190, 45);
+}
+footer .copyright {
+  height: 55px;
+  background-color: #2E2E2E;
+}
+footer .copyright p {
+  padding: 8px 160px 0;
+}
+
+.contactHeader {
+  min-height: 50vh;
+  background-image: url(../assets/contact-1-min.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  min-height: 100vh;
+}
+.contact .contactContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+}
+.contact .contactContent .formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+}
+.contact .contactContent .contactDetailsContainer {
+  width: 35%;
+  background-color: #F6F6F6;
+  padding-left: 30px;
+}
+.contact .contactContent .contactDetailsContainer .wrapper {
+  margin-left: 0;
+}
+.contact .contactContent .contactDetailsContainer div {
+  max-width: 60%;
+}
+.contact .contactContent .contactDetailsContainer .contactDetails {
+  max-width: 100%;
+}
+.contact .contactContent .contactDetailsContainer .contactDetails h3 {
+  padding: 48px 0 20px;
+}
+.contact .contactContent .contactDetailsContainer h5 {
+  padding: 30px 0 15px;
+}
+.contact .contactContent .contactDetailsContainer adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 120px;
+}
+.contact .contactBackground {
+  height: 56vh;
+  background-image: url(../assets/contact-2-min.jpeg);
+  background-size: cover;
+  background-position: center;
 }
