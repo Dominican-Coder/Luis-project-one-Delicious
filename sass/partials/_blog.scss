@@ -5,102 +5,161 @@
     background-position: center;
 }
 
-.blogSection {
+.blogPageContent {
 
-    margin-top: 116px;
-
-    .blogContent {       
-
-        p {
-            margin-top: 20px;
-        } 
-        
-    } 
+    .blogSection {
     
-    .shareSection {
-        border-top: 2px solid $quarternary;
-        border-bottom: 2px solid $quarternary;
-        padding: 40px 0;
-        margin: 50px 0;
+        margin-top: 116px;
+
+        .blogContent {
+
+            p {
+                margin-top: 20px;
+            }
+
+        }
+
+        .shareSection {
+            border-top: 2px solid $quarternary;
+            border-bottom: 2px solid $quarternary;
+            padding: 40px 0;
+            margin: 50px 0;
+
+            h4 {
+                padding-right: 10px;
+            }
+
+            .tags {
+                display: flex;
+                margin-bottom: 30px;
+            }
+
+            .share {
+                display: flex;
+                align-items: center;
+                height: 40px;
+
+                ul {
+                    width: 10%;
+                    justify-content: space-between;
+                    margin: 0;
+
+
+                    a {
+                        padding: 10px;
+                    }
+
+                }
+            }
+        }
+
+        .author {
+            display: flex;
+            border-bottom: 2px solid $quarternary;
+            padding-bottom: 40px;
+
+
+            .authorImgContainer {
+                width: 15%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .aboutAuthor {
+                background-color: $quarternary;
+                width: 85%;
+                margin-left: 30px;
+                padding: 30px;
+
+                h5 {
+                    padding-bottom: 12px;
+                }
+            }
+        }
+    }
+
+    .relatedPost {
 
         h4 {
-            padding-right: 10px;
+            margin-top: 45px;
         }
 
-        .tags {
+        .postFlex {
             display: flex;
-            margin-bottom: 30px;     
-        }
+            border-bottom: 2px solid $quarternary;
+            padding-bottom: 10px;
+            margin-top: 35px;
 
-        .share {
-            display: flex; 
-            align-items: center;
-            height: 40px;
-           
-            ul {
-                width: 10%;
-                justify-content: space-between;
-                margin: 0;  
+            .postContainer {
+                width: 32%;
+                margin-right: 25px;
 
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
 
-              a {
-                padding: 10px;               
-              }
-
+            div {
+                margin-bottom: 20px;
             }
         }
     }
 
-    .author {
-        display: flex;
-        border-bottom: 2px solid $quarternary;
-        padding-bottom: 40px;
+    .commentCounter {
 
-
-        .authorImgContainer {
-            width: 15%;  
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
+        p {
+            margin-right: 5px;
         }
 
-        .aboutAuthor {
+        h5 {
+            padding-top: 2px;
+        }
+    }
+
+    .commentsContainer {        
+        
+        .commentsImg {
+            width: 10%;
+            margin-right: 30px;                
+        }
+
+        .comment {
             background-color: $quarternary;
-            width: 85%;
-            margin-left: 30px;
-            padding: 30px;
+            padding: 13px 20px 6px 15px;     
+            position: relative;           
 
-            h5 {
-                padding-bottom: 12px;
-            }            
+            &::before {
+                content: "";
+                position: absolute;
+                right: 98%;
+                top: 4px;
+                border-top: 16px solid transparent;
+                border-right: 28px solid $quarternary;
+                border-bottom: 13px solid transparent;
+                z-index: -999;
+            }  
+
+            p {
+                padding-bottom: 10px;         
+            }
         }
-    }        
-}
-
-.relatedPost { 
-    
-    h4 {
-        margin-top: 45px;
     }
 
-    .postFlex {
+    .commentsContainer,
+    .commentCounter {
         display: flex;
-        border-bottom: 2px solid red;
-        padding-bottom: 10px;
         margin-top: 35px;
-
-        .postContainer {
-            width: 32%;
-            margin-right: 25px;       
-        }
-
-        div {
-            margin-bottom: 20px;
-        }
     }
+
+    .commentForm {
+        margin-top: 50px;
+    }
+
+    
+
+
 }
-
-
 

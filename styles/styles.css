@@ -550,9 +550,17 @@ footer .copyright p span {
 .blogPageContent .commentSection .comment p {
   color: #333333;
 }
+.blogPageContent .commentSection .comment p span {
+  color: #2E2E2E;
+  font-weight: 700;
+}
 .blogPageContent .commentSection .comment .postDate {
   color: #333333;
   font-family: "Raleway", sans-serif;
+}
+.blogPageContent .commentSection .commentCounter p {
+  font-family: "Raleway", sans-serif;
+  color: #2E2E2E;
 }
 
 * {
@@ -1085,28 +1093,28 @@ footer .copyright p {
   background-position: center;
 }
 
-.blogSection {
+.blogPageContent .blogSection {
   margin-top: 116px;
 }
-.blogSection .blogContent p {
+.blogPageContent .blogSection .blogContent p {
   margin-top: 20px;
 }
-.blogSection .shareSection {
+.blogPageContent .blogSection .shareSection {
   border-top: 2px solid #F6F6F6;
   border-bottom: 2px solid #F6F6F6;
   padding: 40px 0;
   margin: 50px 0;
 }
-.blogSection .shareSection h4 {
+.blogPageContent .blogSection .shareSection h4 {
   padding-right: 10px;
 }
-.blogSection .shareSection .tags {
+.blogPageContent .blogSection .shareSection .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
 }
-.blogSection .shareSection .share {
+.blogPageContent .blogSection .shareSection .share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,57 +1123,97 @@ footer .copyright p {
           align-items: center;
   height: 40px;
 }
-.blogSection .shareSection .share ul {
+.blogPageContent .blogSection .shareSection .share ul {
   width: 10%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0;
 }
-.blogSection .shareSection .share ul a {
+.blogPageContent .blogSection .shareSection .share ul a {
   padding: 10px;
 }
-.blogSection .author {
+.blogPageContent .blogSection .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid #F6F6F6;
   padding-bottom: 40px;
 }
-.blogSection .author .authorImgContainer {
+.blogPageContent .blogSection .author .authorImgContainer {
   width: 15%;
 }
-.blogSection .author .authorImgContainer img {
+.blogPageContent .blogSection .author .authorImgContainer img {
   width: 100%;
   height: 100%;
 }
-.blogSection .author .aboutAuthor {
+.blogPageContent .blogSection .author .aboutAuthor {
   background-color: #F6F6F6;
   width: 85%;
   margin-left: 30px;
   padding: 30px;
 }
-.blogSection .author .aboutAuthor h5 {
+.blogPageContent .blogSection .author .aboutAuthor h5 {
   padding-bottom: 12px;
 }
-
-.relatedPost h4 {
+.blogPageContent .relatedPost h4 {
   margin-top: 45px;
 }
-.relatedPost .postFlex {
+.blogPageContent .relatedPost .postFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #F6F6F6;
   padding-bottom: 10px;
   margin-top: 35px;
 }
-.relatedPost .postFlex .postContainer {
+.blogPageContent .relatedPost .postFlex .postContainer {
   width: 32%;
   margin-right: 25px;
 }
-.relatedPost .postFlex div {
+.blogPageContent .relatedPost .postFlex .postContainer:last-child {
+  margin-right: 0;
+}
+.blogPageContent .relatedPost .postFlex div {
   margin-bottom: 20px;
+}
+.blogPageContent .commentCounter p {
+  margin-right: 5px;
+}
+.blogPageContent .commentCounter h5 {
+  padding-top: 2px;
+}
+.blogPageContent .commentsContainer .commentsImg {
+  width: 10%;
+  margin-right: 30px;
+}
+.blogPageContent .commentsContainer .comment {
+  background-color: #F6F6F6;
+  padding: 13px 20px 6px 15px;
+  position: relative;
+}
+.blogPageContent .commentsContainer .comment::before {
+  content: "";
+  position: absolute;
+  right: 98%;
+  top: 4px;
+  border-top: 16px solid transparent;
+  border-right: 28px solid #F6F6F6;
+  border-bottom: 13px solid transparent;
+  z-index: -999;
+}
+.blogPageContent .commentsContainer .comment p {
+  padding-bottom: 10px;
+}
+.blogPageContent .commentsContainer,
+.blogPageContent .commentCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
+}
+.blogPageContent .commentForm {
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -331,15 +331,27 @@ color: $tertiary;
     .commentSection {
 
         .comment {
-            
 
             p {
                 color: $secondary;
+
+                span {
+                        color: $primary;
+                        font-weight: 700;
+                    }
             }
 
             .postDate {
                 color: $secondary;
                 font-family: $primaryFont;            
+            }
+        }
+
+        .commentCounter {
+
+            p {
+                font-family: $primaryFont;
+                color: $primary;
             }
         }
     }      
