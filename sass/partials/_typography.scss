@@ -291,37 +291,59 @@ color: $tertiary;
 
 
 // < !--------- Blog Page Styles --------->
-.blogHeading {
+
+.blogPageContent {
 
     p {
-        font-family:  $secondaryFont;
-        margin-bottom: 30px;
-        color: $secondary;
-        @include fontSize(15);
-
-
+        @include fontSize(16);
     }
-}
 
-.blogSection {
+    .postDate {
+        font-family: $secondaryFont;
+        color: $tertiary;
+        @include fontSize(10);
 
-    p {
-        // line-height: 
-        @include fontSize(16);    
+        span {
+            color: $secondary;
+        }
     }
     
-    .share {
-        
-        a {
-            color: $tertiary;
-            @include fontSize(20); 
-        }        
+    .blogHeading {
+    
+        p {
+            color: $secondary;            
+            margin-bottom: 30px;
+            
+        }
     }
-}
+    
+    .blogSection {     
+        
+        .share {
+            
+            a {
+                color: $tertiary;
+                @include fontSize(20); 
+            }        
+        }
+    }
 
+    .commentSection {
+
+        .comment {
+            
+
+            p {
+                color: $secondary;
+            }
+
+            .postDate {
+                color: $secondary;
+                font-family: $primaryFont;            
+            }
+        }
+    }      
+    
+    
+} 
 // < !----X---- Blog Page Styles ----X---->
-
-
-
-
-
