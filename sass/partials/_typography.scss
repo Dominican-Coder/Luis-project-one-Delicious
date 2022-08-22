@@ -210,7 +210,6 @@ color: $tertiary;
 
 
         // < !--------- Contact Page Styles --------->
-
 .contactContent {
     form {
     
@@ -287,9 +286,7 @@ color: $tertiary;
                 }
             }
         }
-}
-
-// < !----X---- Contact Page Styles ----X---->
+}// < !----X---- Contact Page Styles ----X---->
 
 
 
@@ -297,6 +294,7 @@ color: $tertiary;
 .blogHeading {
 
     p {
+        font-family:  $secondaryFont;
         margin-bottom: 30px;
         color: $secondary;
         @include fontSize(15);
@@ -307,11 +305,17 @@ color: $tertiary;
 
 .blogSection {
 
-    .blogContent {
-        p {
-            @include fontSize(16);
-            
-        }
+    p {
+        // line-height: 
+        @include fontSize(16);    
+    }
+    
+    .share {
+        
+        a {
+            color: $tertiary;
+            @include fontSize(20); 
+        }        
     }
 }
 

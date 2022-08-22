@@ -20,7 +20,7 @@
             padding: 25px 60px;
         }
 
-        a {
+        .btn {
             background-color: $quinary;
             padding: 14px 30px;
 
@@ -28,7 +28,6 @@
             &:focus {
                 background-color: $septenary;
                 color: $quinary;
-
             }
         }
     }

@@ -38,35 +38,8 @@ footer {
 
             .footerHeading {
                 margin-bottom: 2rem;
-            }
-
-            .socialMedia {
-                display: flex; 
-                width: 81%;
-                margin-top: 20px; 
-                border-top: 1px solid $septenary;
-
-                li {       
-
-                    a {
-                        font-size: 16px;
-                        color: $quarternary;
-                        padding: 2px 15px;
-                
-                        &:hover,
-                        &:focus {
-                            color: $quinary;             
-                        }                       
-                    }
-
-                    a:first-child {
-                        padding-left: 0;
-                    }
-
-                    
-                }        
-            }       
-        }
+            }                  
+        }      
 
         .subscribe {
             padding-right: 0; 
@@ -79,6 +52,9 @@ footer {
 
             form {
                 display: flex;
+                border-bottom: 1px solid $septenary;
+                width: 70%;
+                padding-bottom: 30px;
                 input[type=email] {
                     width: 232px;
                     height: 40px;
@@ -117,3 +93,29 @@ footer {
         }
     }
 }
+
+ .socialMedia {
+     display: flex;
+     width: 81%;
+     margin-top: 20px;   
+
+     li {
+
+         a {
+             font-size: 16px;
+             color: $quarternary;
+             padding: 2px 15px;
+
+             &:hover,
+             &:focus {
+                 color: $quinary;
+             }
+         }
+
+         a:first-child {
+             padding-left: 0;
+         }
+
+
+     }
+ }

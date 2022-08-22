@@ -526,15 +526,21 @@ footer .copyright p span {
 }
 
 .blogHeading p {
+  font-family: "Lora", serif;
   margin-bottom: 30px;
   color: #333333;
   font-size: 15px;
   font-size: 0.75rem;
 }
 
-.blogSection .blogContent p {
+.blogSection p {
   font-size: 16px;
   font-size: 0.8rem;
+}
+.blogSection .share a {
+  color: #999999;
+  font-size: 20px;
+  font-size: 1rem;
 }
 
 * {
@@ -697,11 +703,11 @@ header .wrapper {
   text-align: center;
   padding: 25px 60px;
 }
-.popularRecipes .recipesContent a {
+.popularRecipes .recipesContent .btn {
   background-color: rgb(132, 190, 45);
   padding: 14px 30px;
 }
-.popularRecipes .recipesContent a:hover, .popularRecipes .recipesContent a:focus {
+.popularRecipes .recipesContent .btn:hover, .popularRecipes .recipesContent .btn:focus {
   background-color: rgba(184, 182, 182, 0.3647058824);
   color: rgb(132, 190, 45);
 }
@@ -891,25 +897,6 @@ footer .wrapper .footerColumn a:focus {
 footer .wrapper .footerColumn .footerHeading {
   margin-bottom: 2rem;
 }
-footer .wrapper .footerColumn .socialMedia {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 81%;
-  margin-top: 20px;
-  border-top: 1px solid rgba(184, 182, 182, 0.3647058824);
-}
-footer .wrapper .footerColumn .socialMedia li a {
-  font-size: 16px;
-  color: #F6F6F6;
-  padding: 2px 15px;
-}
-footer .wrapper .footerColumn .socialMedia li a:hover, footer .wrapper .footerColumn .socialMedia li a:focus {
-  color: rgb(132, 190, 45);
-}
-footer .wrapper .footerColumn .socialMedia li a:first-child {
-  padding-left: 0;
-}
 footer .wrapper .subscribe {
   padding-right: 0;
 }
@@ -921,6 +908,9 @@ footer .wrapper .subscribe form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 1px solid rgba(184, 182, 182, 0.3647058824);
+  width: 70%;
+  padding-bottom: 30px;
 }
 footer .wrapper .subscribe form input[type=email] {
   width: 232px;
@@ -957,6 +947,25 @@ footer .copyright {
 }
 footer .copyright p {
   padding: 8px 160px 0;
+}
+
+.socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 81%;
+  margin-top: 20px;
+}
+.socialMedia li a {
+  font-size: 16px;
+  color: #F6F6F6;
+  padding: 2px 15px;
+}
+.socialMedia li a:hover, .socialMedia li a:focus {
+  color: rgb(132, 190, 45);
+}
+.socialMedia li a:first-child {
+  padding-left: 0;
 }
 
 .contactHeader {
@@ -1064,8 +1073,66 @@ footer .copyright p {
   background-position: center;
 }
 
+.blogSection {
+  margin-top: 116px;
+}
 .blogSection .blogContent p {
   margin-top: 20px;
+}
+.blogSection .shareSection {
+  border-top: 2px solid #F6F6F6;
+  border-bottom: 2px solid #F6F6F6;
+  padding: 40px 0;
+  margin: 50px 0;
+}
+.blogSection .shareSection h4 {
+  padding-right: 10px;
+}
+.blogSection .shareSection .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.blogSection .shareSection .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+.blogSection .shareSection .share ul {
+  width: 10%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+}
+.blogSection .shareSection .share ul a {
+  padding: 10px;
+}
+.blogSection .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blogSection .author .authorImgContainer {
+  width: 15%;
+}
+.blogSection .author .authorImgContainer img {
+  width: 100%;
+  height: 100%;
+}
+.blogSection .author .aboutAuthor {
+  background-color: #F6F6F6;
+  width: 85%;
+  margin-left: 30px;
+  padding: 30px;
+}
+.blogSection .author .aboutAuthor h5 {
+  padding-bottom: 12px;
 }
 
 @media only screen and (max-width: 768px) {
