@@ -164,11 +164,11 @@ color: $tertiary;
                     input[type=email] {
                         font-family: $secondaryFont;
                         color: $solidWhite;                        
-                        padding-left: 12px; 
+                        padding-left: 16px; 
                         
                         &::placeholder {
-                            opacity: 0.3;
-                            @include fontSize(8);
+                            opacity: 0.6;
+                            @include fontSize(10);
                         }
 
                     }
@@ -293,7 +293,29 @@ color: $tertiary;
 
 
 
+// < !--------- Blog Page Styles --------->
+.blogHeading {
 
+    p {
+        margin-bottom: 30px;
+        color: $secondary;
+        @include fontSize(15);
+
+
+    }
+}
+
+.blogSection {
+
+    .blogContent {
+        p {
+            @include fontSize(16);
+            
+        }
+    }
+}
+
+// < !----X---- Blog Page Styles ----X---->
 
 
 

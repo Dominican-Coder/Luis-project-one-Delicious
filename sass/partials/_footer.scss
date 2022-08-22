@@ -42,7 +42,7 @@ footer {
 
             .socialMedia {
                 display: flex; 
-                width: 75%;
+                width: 81%;
                 margin-top: 20px; 
                 border-top: 1px solid $septenary;
 
@@ -80,10 +80,12 @@ footer {
             form {
                 display: flex;
                 input[type=email] {
-                    width: 150px;
+                    width: 232px;
+                    height: 40px;
                     border: none;
                     background-color: $septenary;
-                    
+                    opacity: 0.6;  
+                    outline: none;
                 }                
             }
 
@@ -96,10 +98,11 @@ footer {
                 }
 
                 button[type=submit] {
-                    width: 32px;
+                    width:45px;
+                    height: 40px;
                     border: none;
-                    background-color: $quinary;                   
-                    
+                    background-color: $quinary; 
+                    cursor: pointer;             
                 }
         }
 
