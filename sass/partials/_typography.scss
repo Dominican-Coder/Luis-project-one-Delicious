@@ -45,11 +45,11 @@ a {
     transition: 0.3s;
 }
 
- p {
-     line-height: 24px;
-     letter-spacing: 0.3px;
-     color: $tertiary;
- }
+p {
+line-height: 24px;
+letter-spacing: 0.3px;
+color: $tertiary;
+}
 
 .counterNumber {  
     color: $quarternary;
@@ -156,7 +156,6 @@ a {
                 p {
                     line-height: 25px;
                 }
-
                 
                 form {
                     font-size: 0;
@@ -208,41 +207,89 @@ a {
                 }
             }
     }
+
+
+        // < !--------- Contact Page Styles --------->
+
+.contactContent {
+    form {
     
-    .contactDetailsContainer {
-
+            input {
+                font-family: $secondaryFont;
+                padding-left: 20px;
+                @include fontSize(10);
     
-        h3,
-        h5 {
-            letter-spacing: 0.5px;
-        }
-
-        p,
-        a {
-            color: $tertiary;
-            line-height: 22px;
-            letter-spacing: 0.3px;
-            @include fontSize(13);
-        }
-
-        span.weekDays{
-            color: $secondary;
-            font-family: $primaryFont;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-
-        span.city {
-            display: block;
-        }
-
-        adress {
-
-            a {
-                display: block;                
+                &::placeholder {
+                    opacity: 0.9;
+                }
+            }
+    
+            textarea {
+                padding: 15px 20px 0;
+                font-family: $secondaryFont;
+                @include fontSize(10);
+    
+                &::placeholder {
+                    opacity: 0.4;
+                }
+            }
+    
+            button {
+                color: rgb(132, 190, 45);
+                font-family: $primaryFont;
+                text-transform: uppercase;
+                text-align: center;
+                @include fontSize(10);
             }
         }
-    }
+    
+        .contactDetailsContainer {
+    
+    
+            h3,
+            h5 {
+                letter-spacing: 0.5px;
+            }
+    
+            p,
+            a {
+                color: $tertiary;
+                line-height: 22px;
+                letter-spacing: 0.3px;
+                @include fontSize(13);
+            }
+    
+            span.weekDays {
+                color: $secondary;
+                font-family: $primaryFont;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+    
+            time {
+                color: $primary;
+                opacity: 0.7;
+            }
+    
+            span.city {
+                display: block;
+            }
+    
+            adress {
+    
+                a {
+                    display: block;
+    
+                    &:hover,
+                    &:focus {
+                        color: rgb(132, 190, 45);
+                    }
+                }
+            }
+        }
+}
+
+// < !----X---- Contact Page Styles ----X---->
 
 
 

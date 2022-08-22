@@ -85,36 +85,36 @@
             <section class="contact">
                 <div class=" contactContent">
                     <div class="formContainer">                  
-                        <h2>Drop us a line</h2>
-                        <form action="" method="" class=" contactForm">
-                            <label for="name"></label>
-                            <input type="text" name="name" id="name" placeholder="Your Name">
-                            <label for="email"></label>
-                            <input type="email" name="email" id="email" placeholder="Your Email">
-                            <label for="subject"></label>
-                            <input type="text" name="subject" id="subject" placeholder="Subject">
-                            <label for="textArea"></label>
-                            <textarea name="textArea" id="textArea" cols="60" rows="8" placeholder="Message"></textarea>
-                            <button type="submit">Send Message<i class="fa-solid fa-right-long"></i></button>
-                        </form>                      
-                        
+                        <div class="wrapper">
+                            <h2>Drop us a line</h2>
+                            <form action="" method="" name="contactForm" class=" contactForm">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Your Email">
+                                <label for="subject" class="sr-only">Subject</label>
+                                <input type="text" name="subject" id="subject" placeholder="Subject">
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" id="message" cols="55" rows="15" placeholder="Message"></textarea>
+                                <button type="submit">Send Message<i class="fa-solid fa-right-long"></i></button>
+                            </form>                
+                        </div>
                     </div>
 
                     <div class="contactDetailsContainer"> 
                         <div class="wrapper">
                             <div class="contactDetails">
                                 <h3>contact details</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus aut nam accusantium! Ipsam,
-                                    quibusdam
-                                    fugit voluptatem quaerat quisquam asperiores dolor.
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus aut nam Background! quibusdam dolor sit amet consectetursit amet adipisicing.
+                                    
                                 </p>
                             </div>
-                            <div>
+                            <div class="contactDetails">
                                 <h5>Working Hour</h5>
                                 <p><span class="weekDays">Mon-Fri</span>: <time>08:00am</time> - <time>05:30pm</time></p>
                                 <p>Not working on Saturday or Sunday !</p>
                             </div>
-                            <div>
+                            <div class="contactDetails">
                                 <h5>Contact Info</h5>
                                 <adress>
                                     <p>A delicious restaurant <span class="city">Toronto, Ontario</span></p>
@@ -126,16 +126,13 @@
                     </div> 
                 </div>   
                 <div class="contactBackground"></div>
-            </section> 
-               
+            </section>            
         
             <footer>
                 <div class="wrapper">
                     <div class="footerContact footerColumn">
                         <h4 class="footerHeading">Delicious</h4>
-                        <p class="contentBoder">Lollipop I love I love donut lemon drops I love. Powder fruitcake marshmallow
-                            fromage cheesy grin.
-                        </p>
+                        <p class="contentBoder">Lollipop I love I love donut lemon drops I love. Powder fruitcake marshmallow fromage cheesy lemon. </p>
                         <adress class="contentBoder">
                             <p class="contentBoder">A delicious restaurant <span>Toronto, Ontario</span></p>
                             <a href="mailto:yum@food.com" class="contentBoder">yum@food.com</a>
@@ -171,7 +168,7 @@
                         <h5 class="footerHeading">Subscribe Now</h5>
                         <p>Get all of our newest recipes immediately in your inbox!</p>
                         <form action="">
-                            <label for="email"></label>
+                            <label for="email" class="sr-only">Email</label>
                             <input type="email" name="email" id="email" placeholder="Enter your email">
                             <div class="submit">
                                 <button type="submit"><i class="fa-solid fa-right-long"></i></button>
