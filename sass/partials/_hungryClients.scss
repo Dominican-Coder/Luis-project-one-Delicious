@@ -18,7 +18,7 @@
 
        i.fa-quote-left {
         position: absolute;
-        left: -5.8%; 
+        left: -6.8%; 
         top: -8px;       
        }
 
@@ -32,7 +32,18 @@
     .slider {
         display: flex;
         justify-content: space-between;        
-        min-width: 5%;
+        min-width: 8%;
         margin-top: 60px;
+
+        a {            
+            padding: 8px;
+
+            &:hover,
+            &:focus {
+                background-color: $secondary;
+                opacity: 0.6;
+            }
+        }
+        
       }
 }

@@ -18,23 +18,23 @@
         p {
             text-align: center;
             padding: 25px 60px;
-        }
-
-        .btn {
-            background-color: $quinary;
-            padding: 14px 30px;
-
-            &:hover,
-            &:focus {
-                background-color: $septenary;
-                color: $quinary;
-            }
-        }
+        }        
     }
 
     .recipeImg {
         width: 50%;
         
+    }
+}
+
+.btn {
+    background-color: $quinary;
+    padding: 18px 30px;
+
+    &:hover,
+    &:focus {
+        background-color: $septenary;
+        color: $quinary;
     }
 }
 

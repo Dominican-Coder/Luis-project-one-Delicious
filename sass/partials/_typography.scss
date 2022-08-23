@@ -17,19 +17,12 @@ h5 {
     font-weight: 700;
     margin: 0;
     color: $primary;
-    text-transform: uppercase
+    text-transform: uppercase;
+    @include fontSize(18);
 }
 
 h1 {
     @include fontSize(46);    
-}
-
-h2 {
-    @include fontSize(25);
-}
-
-h3 {
-    @include fontSize(18);
 }
 
 h2,
@@ -51,6 +44,15 @@ letter-spacing: 0.3px;
 color: $tertiary;
 }
 
+.btn {
+    font-family: $primaryFont;
+    font-weight: 700;
+    color: $solidWhite;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    @include fontSize(14);
+} 
+
 .counterNumber {  
     color: $quarternary;
     font-weight: bold;
@@ -66,18 +68,8 @@ color: $tertiary;
                 color: $primary; 
                 @include fontSize(16);
             }
-    }   
-
-    .recipesContent {
-
-        a.btn {
-            font-family: $primaryFont;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.6px;
-            @include fontSize(14);
-        }
     }
+
 
     .foodMenu {
 
@@ -294,6 +286,11 @@ color: $tertiary;
 
 .blogPageContent {
 
+    h4,
+    h5 {
+        @include fontSize(15);
+    }
+
     p {
         @include fontSize(16);
     }
@@ -317,9 +314,11 @@ color: $tertiary;
         }
     }
     
-    .blogSection {     
-        
+    .blogSection {   
+       
+
         .share {
+
             
             a {
                 color: $tertiary;
@@ -354,8 +353,34 @@ color: $tertiary;
                 color: $primary;
             }
         }
-    }      
+    }  
     
+  .commentForm {
+
+    .wrapper {
     
+        p {
+            @include fontSize(10);
+        }
+
+
+        form {
+            
+            font-size: 0;
+
+            input,
+            label,
+            textarea,
+            button {
+
+                @include fontSize(10);
+
+                &::placeholder {
+                    font-family: $secondaryFont;
+                }
+            }
+        }
+    }
+  }
 } 
 // < !----X---- Blog Page Styles ----X---->

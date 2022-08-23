@@ -26,7 +26,8 @@
             margin: 50px 0;
 
             h4 {
-                padding-right: 10px;
+                padding-top: 4px;
+                margin-right: 10px;
             }
 
             .tags {
@@ -83,7 +84,7 @@
 
     .relatedPost {
 
-        h4 {
+        h3 {
             margin-top: 45px;
         }
 
@@ -112,10 +113,7 @@
 
         p {
             margin-right: 5px;
-        }
-
-        h5 {
-            padding-top: 2px;
+            padding-top: 5px;
         }
     }
 
@@ -123,7 +121,7 @@
         
         .commentsImg {
             width: 10%;
-            margin-right: 30px;                
+            margin-right: 25px;                
         }
 
         .comment {
@@ -155,11 +153,41 @@
     }
 
     .commentForm {
-        margin-top: 50px;
+        margin: 50px 0 120px;
+
+        form {
+
+            margin-top: 15px;
+            
+            input {
+                width: calc(97% / 3);
+                height: 35px;
+                margin-right: 14px; 
+                padding: 8px;               
+                border-radius: 0;
+                border: 1px solid $septenary;
+
+                &:nth-child(6) {
+                    margin-right: 0;
+                }
+            }
+
+
+            textarea {
+                display: block;
+                width: 100%;
+                border: 1px solid $septenary;
+                margin-top: 20px;
+                padding: 8px;
+                resize: none;
+            }
+
+            .btn {
+                border: none;
+                margin-top: 15px;
+                
+            }
+        }
     }
-
-    
-
-
 }
 

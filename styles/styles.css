@@ -262,21 +262,13 @@ h5 {
   margin: 0;
   color: #2E2E2E;
   text-transform: uppercase;
+  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 h1 {
   font-size: 46px;
   font-size: 2.3rem;
-}
-
-h2 {
-  font-size: 25px;
-  font-size: 1.25rem;
-}
-
-h3 {
-  font-size: 18px;
-  font-size: 0.9rem;
 }
 
 h2,
@@ -299,6 +291,16 @@ p {
   color: #999999;
 }
 
+.btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+  font-size: 0.7rem;
+}
+
 .counterNumber {
   color: #F6F6F6;
   font-weight: bold;
@@ -315,15 +317,6 @@ p {
   color: #2E2E2E;
   font-size: 16px;
   font-size: 0.8rem;
-}
-
-.recipesContent a.btn {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  font-size: 14px;
-  font-size: 0.7rem;
 }
 
 .foodMenu i {
@@ -525,6 +518,11 @@ footer .copyright p span {
   color: rgb(132, 190, 45);
 }
 
+.blogPageContent h4,
+.blogPageContent h5 {
+  font-size: 15px;
+  font-size: 0.75rem;
+}
 .blogPageContent p {
   font-size: 16px;
   font-size: 0.8rem;
@@ -561,6 +559,38 @@ footer .copyright p span {
 .blogPageContent .commentSection .commentCounter p {
   font-family: "Raleway", sans-serif;
   color: #2E2E2E;
+}
+.blogPageContent .commentForm .wrapper p {
+  font-size: 10px;
+  font-size: 0.5rem;
+}
+.blogPageContent .commentForm .wrapper form {
+  font-size: 0;
+}
+.blogPageContent .commentForm .wrapper form input,
+.blogPageContent .commentForm .wrapper form label,
+.blogPageContent .commentForm .wrapper form textarea,
+.blogPageContent .commentForm .wrapper form button {
+  font-size: 10px;
+  font-size: 0.5rem;
+}
+.blogPageContent .commentForm .wrapper form input::-webkit-input-placeholder, .blogPageContent .commentForm .wrapper form label::-webkit-input-placeholder, .blogPageContent .commentForm .wrapper form textarea::-webkit-input-placeholder, .blogPageContent .commentForm .wrapper form button::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+}
+.blogPageContent .commentForm .wrapper form input::-moz-placeholder, .blogPageContent .commentForm .wrapper form label::-moz-placeholder, .blogPageContent .commentForm .wrapper form textarea::-moz-placeholder, .blogPageContent .commentForm .wrapper form button::-moz-placeholder {
+  font-family: "Lora", serif;
+}
+.blogPageContent .commentForm .wrapper form input:-ms-input-placeholder, .blogPageContent .commentForm .wrapper form label:-ms-input-placeholder, .blogPageContent .commentForm .wrapper form textarea:-ms-input-placeholder, .blogPageContent .commentForm .wrapper form button:-ms-input-placeholder {
+  font-family: "Lora", serif;
+}
+.blogPageContent .commentForm .wrapper form input::-ms-input-placeholder, .blogPageContent .commentForm .wrapper form label::-ms-input-placeholder, .blogPageContent .commentForm .wrapper form textarea::-ms-input-placeholder, .blogPageContent .commentForm .wrapper form button::-ms-input-placeholder {
+  font-family: "Lora", serif;
+}
+.blogPageContent .commentForm .wrapper form input::placeholder,
+.blogPageContent .commentForm .wrapper form label::placeholder,
+.blogPageContent .commentForm .wrapper form textarea::placeholder,
+.blogPageContent .commentForm .wrapper form button::placeholder {
+  font-family: "Lora", serif;
 }
 
 * {
@@ -723,16 +753,17 @@ header .wrapper {
   text-align: center;
   padding: 25px 60px;
 }
-.popularRecipes .recipesContent .btn {
-  background-color: rgb(132, 190, 45);
-  padding: 14px 30px;
-}
-.popularRecipes .recipesContent .btn:hover, .popularRecipes .recipesContent .btn:focus {
-  background-color: rgba(184, 182, 182, 0.3647058824);
-  color: rgb(132, 190, 45);
-}
 .popularRecipes .recipeImg {
   width: 50%;
+}
+
+.btn {
+  background-color: rgb(132, 190, 45);
+  padding: 18px 30px;
+}
+.btn:hover, .btn:focus {
+  background-color: rgba(184, 182, 182, 0.3647058824);
+  color: rgb(132, 190, 45);
 }
 
 .foodMenu {
@@ -858,7 +889,7 @@ header .wrapper {
 }
 .hungryClients p i.fa-quote-left {
   position: absolute;
-  left: -5.8%;
+  left: -6.8%;
   top: -8px;
 }
 .hungryClients p i.fa-quote-right {
@@ -873,8 +904,15 @@ header .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 5%;
+  min-width: 8%;
   margin-top: 60px;
+}
+.hungryClients .slider a {
+  padding: 8px;
+}
+.hungryClients .slider a:hover, .hungryClients .slider a:focus {
+  background-color: #333333;
+  opacity: 0.6;
 }
 
 footer {
@@ -1106,7 +1144,8 @@ footer .copyright p {
   margin: 50px 0;
 }
 .blogPageContent .blogSection .shareSection h4 {
-  padding-right: 10px;
+  padding-top: 4px;
+  margin-right: 10px;
 }
 .blogPageContent .blogSection .shareSection .tags {
   display: -webkit-box;
@@ -1156,7 +1195,7 @@ footer .copyright p {
 .blogPageContent .blogSection .author .aboutAuthor h5 {
   padding-bottom: 12px;
 }
-.blogPageContent .relatedPost h4 {
+.blogPageContent .relatedPost h3 {
   margin-top: 45px;
 }
 .blogPageContent .relatedPost .postFlex {
@@ -1179,13 +1218,11 @@ footer .copyright p {
 }
 .blogPageContent .commentCounter p {
   margin-right: 5px;
-}
-.blogPageContent .commentCounter h5 {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 .blogPageContent .commentsContainer .commentsImg {
   width: 10%;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .blogPageContent .commentsContainer .comment {
   background-color: #F6F6F6;
@@ -1213,7 +1250,33 @@ footer .copyright p {
   margin-top: 35px;
 }
 .blogPageContent .commentForm {
-  margin-top: 50px;
+  margin: 50px 0 120px;
+}
+.blogPageContent .commentForm form {
+  margin-top: 15px;
+}
+.blogPageContent .commentForm form input {
+  width: 32.3333333333%;
+  height: 35px;
+  margin-right: 14px;
+  padding: 8px;
+  border-radius: 0;
+  border: 1px solid rgba(184, 182, 182, 0.3647058824);
+}
+.blogPageContent .commentForm form input:nth-child(6) {
+  margin-right: 0;
+}
+.blogPageContent .commentForm form textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(184, 182, 182, 0.3647058824);
+  margin-top: 20px;
+  padding: 8px;
+  resize: none;
+}
+.blogPageContent .commentForm form .btn {
+  border: none;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 768px) {
