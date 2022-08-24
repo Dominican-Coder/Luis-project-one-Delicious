@@ -30,11 +30,13 @@
 .btn {
     background-color: $quinary;
     padding: 18px 30px;
+    border:transparent solid 2px;
 
     &:hover,
     &:focus {
-        background-color: $septenary;
+        background-color: $solidWhite;        
         color: $quinary;
+        border: $quinary solid 2px;
     }
 }
 
@@ -45,10 +47,7 @@
     width: 50%;
     background-color: $quarternary;
 
-    .colunm {
-               
-    }
-
+    
     i {
         color: $secondary;
         padding: 0 19px;

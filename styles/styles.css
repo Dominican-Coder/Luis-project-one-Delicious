@@ -668,19 +668,21 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+.navbar .shoppingCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .navbar .shoppingBag {
   position: relative;
 }
-.navbar .counter p {
+.navbar .counterNumber {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -760,10 +762,12 @@ header .wrapper {
 .btn {
   background-color: rgb(132, 190, 45);
   padding: 18px 30px;
+  border: transparent solid 2px;
 }
 .btn:hover, .btn:focus {
-  background-color: rgba(184, 182, 182, 0.3647058824);
+  background-color: #ffffff;
   color: rgb(132, 190, 45);
+  border: rgb(132, 190, 45) solid 2px;
 }
 
 .foodMenu {
@@ -1279,14 +1283,51 @@ footer .copyright p {
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 768px) {
-  footer .wrapper {
+@media (max-width: 500px) {
+  header .navbar,
+header .navItemFlex,
+header .navContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .wrapper .footerHeading {
+  header .navbar .logo,
+header .navItemFlex .logo,
+header .navContainer .logo {
+    padding: 0;
+    font-size: 33px;
+    font-size: 1.65rem;
+  }
+  header .shoppingCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .shoppingCart .search {
+    padding-top: 3px;
+  }
+  .popularRecipes .recipesContainerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popularRecipes .recipesContainerFlex .recipesContent {
+    width: 100%;
     margin: 40px 0;
+  }
+  .popularRecipes .recipesContainerFlex .recipesContent p {
+    line-height: 30px;
+  }
+  .popularRecipes .recipesContainerFlex .recipeImg {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu {
+    width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
+    margin-top: 30px;
   }
 }

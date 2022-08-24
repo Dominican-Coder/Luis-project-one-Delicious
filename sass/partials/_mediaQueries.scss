@@ -1,19 +1,154 @@
-// < !--------- Footer --------->
+@media (max-width: 500px) {   
 
-@media only screen  and (max-width: 768px) {
-    footer {
-
-        .wrapper {
-            flex-direction: column;
-
-            .footerHeading {
-
-                margin: 40px 0;
-
+    header {
+        .navbar,
+            .navItemFlex,
+            .navContainer {
+                flex-direction: column;
+        
+                .logo {
+                    padding: 0;
+                    @include fontSize(33);               
+                }
             }
         
+            .shoppingCart {
+                display: flex;
+        
+                .search {
+                    padding-top: 3px;
+                }
+            }            
+    }// ----X---- Header ----X----
+  
+
+    .popularRecipes {       
             
+        .recipesContainerFlex {
+            flex-direction: column;
+    
+            .recipesContent {
+                width: 100%;
+                margin: 40px 0;
+    
+                p {
+                    line-height: 30px;
+                }
+            }
+    
+            .recipeImg {
+                width: 100%;
+                margin-top: 8px;
+    
+            }
+    
+            .foodMenu {
+                width: 100%;
+    
+                .colunm {
+                    margin-top: 30px;
+    
+                }
+    
+            }
         }
-    }
+        
+    } // ----X---- .popularRecipes section ----X----
+    
+    
+    
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// < !--------- Our Restaurant --------->
+
+// @media (min-width: 1338px) {
+
+//     .stamp {
+//             width: 12%;
+//             height: 21%;
+//             position: absolute;
+//             top: 103px;
+//             left: 56.2%;
+//         }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// < !--------- Footer --------->
+
+// @media (max-width: 1160px) {
+//     footer {
+
+//         .wrapper {
+//             width: 100%;
+//             // flex-direction: column;
+            
+            
+//             border: 2px red solid;
+
+//             .footerColumn {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: flex-end;
+
+                
+                
+                
+//             }
+            
+
+//             .footerHeading {
+               
+//                 margin: 40px 0 0 0;
+//             }
+
+            
+        
+            
+//         }
+//     }
+    
+// }

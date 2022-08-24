@@ -12,17 +12,19 @@
 
     .navItemFlex {
         display: flex;
-        flex: 1;
         justify-content: space-around;
         align-items: center;         
     }
 
+    .shoppingCart {
+        display: flex;
+    }
     
     .shoppingBag {
         position: relative;  
     }
 
-    .counter p {
+    .counterNumber {
         display: flex;
         justify-content: center;
         align-items: center;            
@@ -38,9 +40,7 @@
     .shoppingBag i,
     .search i {
         padding: 10px 5px;
-        color: $primary;
-
-        
+        color: $primary;        
     }
 
     .search {
@@ -57,7 +57,5 @@
             color: rgb(132, 190, 45);
             outline: none;
         }
-    }
-
-        
+    }        
 }
