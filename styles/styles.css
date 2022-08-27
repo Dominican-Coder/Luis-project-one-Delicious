@@ -800,10 +800,13 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px;
+  padding-bottom: 20px;
 }
 
 .ourRestaurants {
+  min-height: 100vh;
+}
+.ourRestaurants .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,10 +820,10 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 98vh;
   position: relative;
+  min-height: inherit;
 }
-.ourRestaurants div {
+.ourRestaurants .wrapper div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,24 +837,23 @@ header .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 72%;
 }
-.ourRestaurants div h2 {
+.ourRestaurants .wrapper div h2 {
   margin-top: 46px;
 }
-.ourRestaurants div p {
+.ourRestaurants .wrapper div p {
   margin-top: 30px;
   text-align: center;
 }
-.ourRestaurants .stamp {
-  width: 12%;
-  height: 21%;
-  position: absolute;
-  top: 107px;
-  left: 56.2%;
-}
-.ourRestaurants .foodCourtImg {
+.ourRestaurants .wrapper div .foodCourtImg {
   width: 51%;
+}
+.ourRestaurants .wrapper .stamp {
+  width: 17%;
+  height: 24%;
+  position: absolute;
+  top: 58px;
+  left: 65.6%;
 }
 
 .gallery ul {
@@ -887,7 +889,7 @@ header .wrapper {
 }
 .hungryClients p {
   width: 88%;
-  margin-top: 48px;
+  padding-top: 48px;
   text-align: center;
   position: relative;
 }
@@ -939,7 +941,7 @@ footer .wrapper .footerColumn {
   margin-bottom: 70px;
 }
 footer .wrapper .footerColumn .contentBoder {
-  width: 85%;
+  width: 80%;
   line-height: 25px;
   border-bottom: 1px solid rgba(184, 182, 182, 0.3647058824);
   padding-bottom: 14px;
@@ -1003,31 +1005,28 @@ footer .wrapper .subscribe button[type=submit] {
   background-color: rgb(132, 190, 45);
   cursor: pointer;
 }
-footer .copyright {
-  height: 55px;
-  background-color: #2E2E2E;
-}
-footer .copyright p {
-  padding: 8px 160px 0;
-}
-
-.socialMedia {
+footer .socialMedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 81%;
   margin-top: 20px;
 }
-.socialMedia li a {
+footer .socialMedia li a {
   font-size: 16px;
   color: #F6F6F6;
   padding: 2px 15px;
 }
-.socialMedia li a:hover, .socialMedia li a:focus {
+footer .socialMedia li a:hover, footer .socialMedia li a:focus {
   color: rgb(132, 190, 45);
 }
-.socialMedia li a:first-child {
+footer .socialMedia li a:first-child {
   padding-left: 0;
+}
+footer .copyright {
+  height: 55px;
+  background-color: #2E2E2E;
+  padding: 8px 0 0 150px;
 }
 
 .contactHeader {
@@ -1328,6 +1327,117 @@ header .navContainer .logo {
     width: 100%;
   }
   .popularRecipes .recipesContainerFlex .foodMenu .colunm {
-    margin-top: 30px;
+    margin-top: 50px;
+  }
+  .ourRestaurants {
+    min-height: 85vh;
+  }
+  .ourRestaurants .wrapper {
+    width: 100%;
+  }
+  .ourRestaurants .wrapper div {
+    width: inherit;
+  }
+  .ourRestaurants .wrapper div .foodCourtImg {
+    width: 70%;
+  }
+  .ourRestaurants .wrapper .stamp {
+    width: 22%;
+    height: 17%;
+    position: absolute;
+    top: 71px;
+    left: 72.1%;
+  }
+  .hungryClients .wrapper {
+    width: 100%;
+    padding: 80 0px;
+  }
+  .hungryClients .wrapper p {
+    width: 92%;
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
+  .hungryClients .wrapper p i {
+    font-size: 25px;
+    font-size: 1.25rem;
+  }
+  .hungryClients .wrapper p i.fa-quote-left {
+    position: absolute;
+    left: -4%;
+    top: 48px;
+  }
+  .hungryClients .wrapper p i.fa-quote-right {
+    position: absolute;
+    right: -4.2%;
+    top: 200px;
+  }
+  .hungryClients .wrapper .slider {
+    min-width: 18%;
+  }
+  footer .wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .wrapper p,
+footer .wrapper a {
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer .wrapper .footerContact {
+    width: 100%;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn {
+    padding-right: 0;
+  }
+  footer .wrapper .footerColumn .columnContent ul {
+    padding-left: 140px;
+  }
+  footer .wrapper .footerColumn h4,
+footer .wrapper .footerColumn h5 {
+    text-align: center;
+  }
+  footer .wrapper .footerColumn p {
+    padding-bottom: 0;
+  }
+  footer .wrapper .footerColumn .contentBoder {
+    border: none;
+  }
+  footer .wrapper .subscribe {
+    text-align: center;
+  }
+  footer .wrapper .subscribe p {
+    width: 100%;
+    padding-bottom: 2px;
+    padding-left: 5px;
+  }
+  footer .wrapper .subscribe form {
+    width: 98%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+  }
+  footer .wrapper .subscribe form input[type=email] {
+    width: 63%;
+    margin-left: 10px;
+  }
+  footer .wrapper .subscribe .socialMedia {
+    padding-left: 42%;
+  }
+  footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
   }
 }

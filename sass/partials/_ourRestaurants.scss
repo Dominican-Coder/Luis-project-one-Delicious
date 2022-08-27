@@ -1,39 +1,48 @@
 .ourRestaurants {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 98vh;
-    position: relative;   
-
-    div {
+   
+    min-height: 100vh;
+    
+    
+    .wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;     
-        width: 72%; 
-
-        h2 {
-            margin-top: 46px;
-        }
-
-        p {
-            margin-top: 30px;
-            text-align: center;
-        }
+        align-items: center;
+        position: relative;
+        min-height: inherit;
 
 
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;            
+        
+                h2 {
+                    margin-top: 46px;
+                }
+        
+                p {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+        
+        
+        
+                .foodCourtImg {
+                    width: 51%;
+                }
+            }
+        
+                .stamp {
+                    width: 17%;
+                    height: 24%;
+                    position: absolute;
+                    top: 58px;
+                    left: 65.6%;
+                }
     }
 
-    .stamp {
-        width: 12%;
-        height:21%;
-        position: absolute;
-        top: 107px;
-        left:56.2%;
-    }
+  
 
-    .foodCourtImg {
-        width: 51%;
-    }
 }

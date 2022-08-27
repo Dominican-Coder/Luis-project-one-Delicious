@@ -22,14 +22,16 @@
     }// ----X---- Header ----X----
   
 
-    .popularRecipes {       
-            
+        //-------- Popular Recipes Section --------->
+    .popularRecipes { 
+        
         .recipesContainerFlex {
             flex-direction: column;
     
             .recipesContent {
                 width: 100%;
                 margin: 40px 0;
+
     
                 p {
                     line-height: 30px;
@@ -44,19 +46,155 @@
     
             .foodMenu {
                 width: 100%;
-    
+                    
                 .colunm {
-                    margin-top: 30px;
-    
-                }
-    
+                    margin-top: 50px;    
+                }    
+            }
+        }        
+    } // ----X---- .popularRecipes section ----X----
+
+
+        // --------- .ourRestaurants ---------
+
+    .ourRestaurants {
+
+        min-height: 85vh;
+
+        .wrapper {
+            width: 100%;
+
+            div {
+                width: inherit;
+
+                .foodCourtImg {
+                    width: 70%;
+                }          
+                
+            }
+            
+            .stamp {
+                width: 22%;
+                height: 17%;
+                position: absolute;
+                top: 71px;
+                left: 72.1%;
             }
         }
+    }// ----X---- .ourRestaurants ----X----
+
+    // --------- .hungryClients ---------
+
+    .hungryClients {
+
+        .wrapper {
+            width: 100%;
+            padding: 80 0px;
+            
+            p {
+                width: 92%;
+                @include fontSize(18);
+
+                i {
+                    @include fontSize(25);
+                }
+
+                i.fa-quote-left {
+                    position: absolute;
+                    left: -4%;
+                    top: 48px;
+                }
+                
+                i.fa-quote-right {
+                    position: absolute;
+                    right: -4.2%;
+                    top: 200px;
+                }
+            }
+
+            .slider {
+                min-width: 18%;
+            }
+        }
+    }// ----X---- .hungryClients ----X----
         
-    } // ----X---- .popularRecipes section ----X----
-    
-    
-    
+    // --------- Footer ---------
+    footer {
+
+        .wrapper {
+            width: 100%;            
+            flex-direction: column;
+            
+            p,
+            a {
+                width: 80%;
+                margin:0 auto ;
+            }
+
+            .footerContact {
+                width: 100%; 
+                text-align: center;
+                
+            }
+            
+            .footerColumn {
+                padding-right: 0;
+
+                .columnContent {
+                    
+                    ul {
+                        // width: 100%;
+                        padding-left: 140px;
+                    }
+                }
+
+                h4,
+                h5 {
+                    text-align: center;
+                }
+                
+                    p {
+                        padding-bottom: 0;
+                    }
+                
+                .contentBoder {
+                    border: none;
+                }
+            }           
+
+            .subscribe {
+                text-align: center;
+
+                p {
+                   width: 100%;                    
+                   padding-bottom: 2px;
+                   padding-left: 5px;
+                }
+                
+                form {
+                    width: 98%;            
+                    justify-content: center;
+                    border: none;
+                    
+                    input[type=email] {
+                        width: 63%;
+                        margin-left: 10px;
+                    }
+                }
+                
+                .socialMedia {
+                    padding-left: 42%;
+                }
+            }
+        }        
+        
+        .copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    }// ----X---- Footer ----X----    
     
 }
 
@@ -87,19 +225,6 @@
 
 
 
-// < !--------- Our Restaurant --------->
-
-// @media (min-width: 1338px) {
-
-//     .stamp {
-//             width: 12%;
-//             height: 21%;
-//             position: absolute;
-//             top: 103px;
-//             left: 56.2%;
-//         }
-
-// }
 
 
 
@@ -117,38 +242,3 @@
 
 
 
-// < !--------- Footer --------->
-
-// @media (max-width: 1160px) {
-//     footer {
-
-//         .wrapper {
-//             width: 100%;
-//             // flex-direction: column;
-            
-            
-//             border: 2px red solid;
-
-//             .footerColumn {
-//                 display: flex;
-//                 flex-direction: column;
-//                 align-items: flex-end;
-
-                
-                
-                
-//             }
-            
-
-//             .footerHeading {
-               
-//                 margin: 40px 0 0 0;
-//             }
-
-            
-        
-            
-//         }
-//     }
-    
-// }

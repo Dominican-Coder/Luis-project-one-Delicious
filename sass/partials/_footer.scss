@@ -4,7 +4,8 @@ footer {
     padding-top: 4rem;   
 
     .wrapper {       
-        display: flex;        
+        display: flex;
+                
         .footerColumn {
             flex-basis: 250px;
             flex-grow: 1;
@@ -13,7 +14,7 @@ footer {
 
 
             .contentBoder {
-                width: 85%;
+                width: 80%;
                 line-height: 25px;
                 border-bottom: 1px solid $septenary;
                 padding-bottom: 14px; 
@@ -55,6 +56,7 @@ footer {
                 border-bottom: 1px solid $septenary;
                 width: 70%;
                 padding-bottom: 30px;
+                
                 input[type=email] {
                     width: 232px;
                     height: 40px;
@@ -84,38 +86,36 @@ footer {
 
     }
 
+    .socialMedia {
+        display: flex;
+        width: 81%;
+        margin-top: 20px;   
+    
+        li {
+    
+            a {
+                font-size: 16px;
+                color: $quarternary;
+                padding: 2px 15px;
+    
+                &:hover,
+                &:focus {
+                    color: $quinary;
+                }
+            }
+    
+            a:first-child {
+                padding-left: 0;
+            }
+    
+    
+        }
+    }
+
     .copyright{
         height: 55px;
         background-color: $primary;
-        
-        p {
-            padding: 8px 160px 0;
-        }
+        padding: 8px 0 0 150px;       
     }
 }
 
- .socialMedia {
-     display: flex;
-     width: 81%;
-     margin-top: 20px;   
-
-     li {
-
-         a {
-             font-size: 16px;
-             color: $quarternary;
-             padding: 2px 15px;
-
-             &:hover,
-             &:focus {
-                 color: $quinary;
-             }
-         }
-
-         a:first-child {
-             padding-left: 0;
-         }
-
-
-     }
- }
