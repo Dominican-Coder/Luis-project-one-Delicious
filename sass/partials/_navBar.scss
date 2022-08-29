@@ -1,7 +1,11 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;   
+    padding-top: 20px;  
+    
+    .hamburgerMenu {
+        display: none;
+    }
     
     .navContainer {
         display: flex;

@@ -249,7 +249,7 @@ html {
 body {
   font-size: 1rem;
   font-family: "Lora", serif;
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 h1,
@@ -260,7 +260,7 @@ h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   margin: 0;
-  color: #2E2E2E;
+  color: #2e2e2e;
   text-transform: uppercase;
   font-size: 18px;
   font-size: 0.9rem;
@@ -302,7 +302,7 @@ p {
 }
 
 .counterNumber {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-weight: bold;
   margin: 0;
   font-size: 10px;
@@ -310,11 +310,11 @@ p {
 }
 
 .navItemFlex {
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 .navItemFlex .navItems a {
   text-transform: uppercase;
-  color: #2E2E2E;
+  color: #2e2e2e;
   font-size: 16px;
   font-size: 0.8rem;
 }
@@ -352,12 +352,12 @@ p {
   font-size: 1.2rem;
 }
 .hungryClients .wrapper .slider a .prev {
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 footer h4,
 footer h5 {
-  color: #F6F6F6;
+  color: #f6f6f6;
   line-height: 24px;
   letter-spacing: 0.5px;
   font-size: 18px;
@@ -418,7 +418,7 @@ footer .subscribe form button[type=submit] {
   font-size: 0.65rem;
 }
 footer .subscribe form button[type=submit] .fa-right-long {
-  color: #F6F6F6;
+  color: #f6f6f6;
   font-size: 15px;
   font-size: 0.75rem;
 }
@@ -433,7 +433,7 @@ footer .copyright p {
 }
 footer .copyright p span {
   text-transform: uppercase;
-  color: rgb(132, 190, 45);
+  color: #64a604;
 }
 
 .contactContent form input {
@@ -505,7 +505,7 @@ footer .copyright p span {
   text-transform: uppercase;
 }
 .contactContent .contactDetailsContainer time {
-  color: #2E2E2E;
+  color: #2e2e2e;
   opacity: 0.7;
 }
 .contactContent .contactDetailsContainer span.city {
@@ -549,7 +549,7 @@ footer .copyright p span {
   color: #333333;
 }
 .blogPageContent .commentSection .comment p span {
-  color: #2E2E2E;
+  color: #2e2e2e;
   font-weight: 700;
 }
 .blogPageContent .commentSection .comment .postDate {
@@ -558,7 +558,7 @@ footer .copyright p span {
 }
 .blogPageContent .commentSection .commentCounter p {
   font-family: "Raleway", sans-serif;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 .blogPageContent .commentForm .wrapper p {
   font-size: 10px;
@@ -610,6 +610,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -651,6 +652,9 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
+}
+.navbar .hamburgerMenu {
+  display: none;
 }
 .navbar .navContainer {
   display: -webkit-box;
@@ -695,7 +699,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 58%;
-  background-color: rgb(132, 190, 45);
+  background-color: #64a604;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -703,7 +707,7 @@ ul {
 .navbar .shoppingBag i,
 .navbar .search i {
   padding: 10px 5px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 .navbar .search {
   margin-left: 14px;
@@ -758,19 +762,7 @@ header .wrapper {
 .popularRecipes .recipeImg {
   width: 50%;
 }
-
-.btn {
-  background-color: rgb(132, 190, 45);
-  padding: 18px 30px;
-  border: transparent solid 2px;
-}
-.btn:hover, .btn:focus {
-  background-color: #ffffff;
-  color: rgb(132, 190, 45);
-  border: rgb(132, 190, 45) solid 2px;
-}
-
-.foodMenu {
+.popularRecipes .foodMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,26 +773,36 @@ header .wrapper {
       -ms-flex-align: center;
           align-items: center;
   width: 50%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
-.foodMenu i {
+.popularRecipes .foodMenu i {
   color: #333333;
   padding: 0 19px;
 }
-.foodMenu i.fa-mug-saucer {
+.popularRecipes .foodMenu i.fa-mug-saucer {
   padding-left: 15px;
   padding-right: 13px;
 }
-.foodMenu i.fa-leaf {
+.popularRecipes .foodMenu i.fa-leaf {
   padding-left: 15px;
   padding-right: 13px;
 }
-
-.foodMenuContent {
+.popularRecipes .foodMenuContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
+}
+
+.btn {
+  background-color: #64a604;
+  padding: 18px 30px;
+  border: transparent solid 2px;
+}
+.btn:hover, .btn:focus {
+  background-color: #ffffff;
+  color: #64a604;
+  border: #64a604 solid 2px;
 }
 
 .ourRestaurants {
@@ -869,7 +871,7 @@ header .wrapper {
 
 .hungryClients {
   min-height: 70vh;
-  background-color: rgba(207, 236, 44, 0.438);
+  background-color: #dded9a;
 }
 .hungryClients .wrapper {
   min-height: 70vh;
@@ -896,12 +898,12 @@ header .wrapper {
 .hungryClients p i.fa-quote-left {
   position: absolute;
   left: -6.8%;
-  top: -8px;
+  top: 39px;
 }
 .hungryClients p i.fa-quote-right {
   position: absolute;
   right: -5.8%;
-  top: 75px;
+  top: 124px;
 }
 .hungryClients .slider {
   display: -webkit-box;
@@ -956,7 +958,7 @@ footer .wrapper .footerColumn span {
 }
 footer .wrapper .footerColumn a:hover,
 footer .wrapper .footerColumn a:focus {
-  color: rgb(132, 190, 45);
+  color: #64a604;
 }
 footer .wrapper .footerColumn .footerHeading {
   margin-bottom: 2rem;
@@ -1002,7 +1004,7 @@ footer .wrapper .subscribe button[type=submit] {
   width: 45px;
   height: 40px;
   border: none;
-  background-color: rgb(132, 190, 45);
+  background-color: #64a604;
   cursor: pointer;
 }
 footer .socialMedia {
@@ -1014,18 +1016,18 @@ footer .socialMedia {
 }
 footer .socialMedia li a {
   font-size: 16px;
-  color: #F6F6F6;
+  color: #f6f6f6;
   padding: 2px 15px;
 }
 footer .socialMedia li a:hover, footer .socialMedia li a:focus {
-  color: rgb(132, 190, 45);
+  color: #64a604;
 }
 footer .socialMedia li a:first-child {
   padding-left: 0;
 }
 footer .copyright {
   height: 55px;
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   padding: 8px 0 0 150px;
 }
 
@@ -1076,7 +1078,7 @@ footer .copyright {
 .contact .contactContent .formContainer .wrapper form input,
 .contact .contactContent .formContainer .wrapper form textarea {
   border: none;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   margin-bottom: 20px;
 }
 .contact .contactContent .formContainer .wrapper form button {
@@ -1089,7 +1091,7 @@ footer .copyright {
 }
 .contact .contactContent .contactDetailsContainer {
   width: 38.3%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-left: 30px;
 }
 .contact .contactContent .contactDetailsContainer .wrapper {
@@ -1141,8 +1143,8 @@ footer .copyright {
   margin-top: 20px;
 }
 .blogPageContent .blogSection .shareSection {
-  border-top: 2px solid #F6F6F6;
-  border-bottom: 2px solid #F6F6F6;
+  border-top: 2px solid #f6f6f6;
+  border-bottom: 2px solid #f6f6f6;
   padding: 40px 0;
   margin: 50px 0;
 }
@@ -1179,7 +1181,7 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid #F6F6F6;
+  border-bottom: 2px solid #f6f6f6;
   padding-bottom: 40px;
 }
 .blogPageContent .blogSection .author .authorImgContainer {
@@ -1190,7 +1192,7 @@ footer .copyright {
   height: 100%;
 }
 .blogPageContent .blogSection .author .aboutAuthor {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   width: 85%;
   margin-left: 30px;
   padding: 30px;
@@ -1205,7 +1207,7 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 2px solid #F6F6F6;
+  border-bottom: 2px solid #f6f6f6;
   padding-bottom: 10px;
   margin-top: 35px;
 }
@@ -1228,7 +1230,7 @@ footer .copyright {
   margin-right: 25px;
 }
 .blogPageContent .commentsContainer .comment {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding: 13px 20px 6px 15px;
   position: relative;
 }
@@ -1238,7 +1240,7 @@ footer .copyright {
   right: 98%;
   top: 4px;
   border-top: 16px solid transparent;
-  border-right: 28px solid #F6F6F6;
+  border-right: 28px solid #f6f6f6;
   border-bottom: 13px solid transparent;
   z-index: -999;
 }
@@ -1282,21 +1284,103 @@ footer .copyright {
   margin-top: 15px;
 }
 
-@media (max-width: 500px) {
-  header .navbar,
-header .navItemFlex,
-header .navContainer {
+.hamburgerMenu div {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+  margin: 6px 0;
+  opacity: 0.8;
+}
+
+@media (max-device-width: 1016px) {
+  .popularRecipes .recipesContainerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .navbar .logo,
-header .navItemFlex .logo,
-header .navContainer .logo {
+  .popularRecipes .recipesContainerFlex .recipesContent {
+    width: 100%;
+    margin: 175px 0;
+  }
+  .popularRecipes .recipesContainerFlex .recipesContent p {
+    line-height: 30px;
+  }
+  .popularRecipes .recipesContainerFlex .recipeImg {
+    width: 100%;
+    margin-top: 2px;
+  }
+  .popularRecipes .recipesContainerFlex .recipeImg img {
+    width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu {
+    width: 100%;
+    min-height: 476px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
+    padding: 100px;
+  }
+}
+@media (max-device-width: 1000px) {
+  header .navbar .logo {
     padding: 0;
     font-size: 33px;
     font-size: 1.65rem;
+  }
+  header .navbar .hamburgerMenu {
+    display: block;
+  }
+  header .navbar .navItemFlex,
+header .navbar .navContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .navbar .shoppingCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navbar .shoppingCart .search {
+    padding-top: 3px;
+  }
+  header .navbar .navContainer {
+    display: none;
+  }
+  .ourRestaurants .wrapper div {
+    width: inherit;
+  }
+  .ourRestaurants .wrapper div .foodCourtImg {
+    width: 100%;
+  }
+  .ourRestaurants .wrapper .stamp {
+    width: 20%;
+    height: 19%;
+    position: absolute;
+    top: 49px;
+    left: 76.1%;
+  }
+}
+@media (max-device-width: 500px) {
+  header .navbar .logo {
+    padding: 0;
+    font-size: 33px;
+    font-size: 1.65rem;
+  }
+  header .navbar .hamburgerMenu {
+    display: block;
+  }
+  header .navbar .navContainer {
+    display: none;
+  }
+  header .navItemFlex,
+header .navContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   header .shoppingCart {
     display: -webkit-box;
@@ -1321,13 +1405,15 @@ header .navContainer .logo {
   }
   .popularRecipes .recipesContainerFlex .recipeImg {
     width: 100%;
-    margin-top: 8px;
+    margin-top: 2px;
   }
   .popularRecipes .recipesContainerFlex .foodMenu {
     width: 100%;
   }
   .popularRecipes .recipesContainerFlex .foodMenu .colunm {
-    margin-top: 50px;
+    margin-top: 70px;
+    min-height: 476px;
+    padding: 0 5px;
   }
   .ourRestaurants {
     min-height: 85vh;
@@ -1354,8 +1440,8 @@ header .navContainer .logo {
   }
   .hungryClients .wrapper p {
     width: 92%;
-    font-size: 18px;
-    font-size: 0.9rem;
+    font-size: 16px;
+    font-size: 0.8rem;
   }
   .hungryClients .wrapper p i {
     font-size: 25px;
@@ -1363,13 +1449,13 @@ header .navContainer .logo {
   }
   .hungryClients .wrapper p i.fa-quote-left {
     position: absolute;
-    left: -4%;
+    left: -3%;
     top: 48px;
   }
   .hungryClients .wrapper p i.fa-quote-right {
     position: absolute;
-    right: -4.2%;
-    top: 200px;
+    right: 16.8%;
+    top: 202px;
   }
   .hungryClients .wrapper .slider {
     min-width: 18%;
@@ -1394,7 +1480,11 @@ footer .wrapper a {
     padding-right: 0;
   }
   footer .wrapper .footerColumn .columnContent ul {
-    padding-left: 140px;
+    padding-left: 0;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn .columnContent ul li {
+    width: 100%;
   }
   footer .wrapper .footerColumn h4,
 footer .wrapper .footerColumn h5 {
@@ -1439,5 +1529,189 @@ footer .wrapper .footerColumn h5 {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+  }
+}
+@media (max-device-width: 420px) {
+  .popularRecipes .recipesContainerFlex .foodMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 6px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
+    min-height: 412px;
+    margin: 0;
+    padding-top: 0;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm:first-child {
+    padding-top: 75px;
+  }
+  .ourRestaurants {
+    min-height: 79vh;
+  }
+  .ourRestaurants .wrapper .stamp {
+    width: 22%;
+    height: 17%;
+    position: absolute;
+    top: 55px;
+    left: 72.1%;
+  }
+  .hungryClients .wrapper p i.fa-quote-left {
+    position: absolute;
+    left: -3.5%;
+    top: 48px;
+  }
+  .hungryClients .wrapper p i.fa-quote-right {
+    position: absolute;
+    right: 20.8%;
+    top: 235px;
+  }
+  .hungryClients .wrapper .slider {
+    min-width: 18%;
+  }
+  footer .wrapper .footerColumn .columnContent ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn .columnContent ul li {
+    width: 100%;
+  }
+  footer .wrapper .subscribe form {
+    width: 98%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+  }
+  footer .wrapper .subscribe form input[type=email] {
+    width: 75%;
+  }
+  footer .wrapper .subscribe .socialMedia {
+    margin: 0;
+    padding-left: 42%;
+  }
+}
+@media (max-device-width: 375px) {
+  .popularRecipes .recipesContainerFlex .recipesContent p {
+    padding: 30px 12px;
+  }
+  .popularRecipes .recipesContainerFlex .recipeImg {
+    margin-top: 2px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 6px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
+    margin: 0;
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm:first-child {
+    padding-top: 75px;
+  }
+  .popularRecipes .foodMenuContent {
+    padding-bottom: 60px;
+  }
+  .ourRestaurants .wrapper .stamp {
+    width: 20%;
+    height: 13%;
+    position: absolute;
+    top: 87px;
+    left: 73.1%;
+  }
+  .ourRestaurants .wrapper div p {
+    padding: 0 12px;
+  }
+  .hungryClients .wrapper {
+    width: 100%;
+    padding: 80 0px;
+  }
+  .hungryClients .wrapper p {
+    width: 92%;
+    font-size: 16px;
+    font-size: 0.8rem;
+  }
+  .hungryClients .wrapper p i {
+    font-size: 25px;
+    font-size: 1.25rem;
+  }
+  .hungryClients .wrapper p i.fa-quote-left {
+    position: absolute;
+    left: -3%;
+    top: 48px;
+  }
+  .hungryClients .wrapper p i.fa-quote-right {
+    position: absolute;
+    right: 26.8%;
+    top: 273px;
+  }
+  .hungryClients .wrapper .slider {
+    min-width: 18%;
+  }
+  footer .wrapper .footerColumn .columnContent ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn .columnContent ul li {
+    width: 100%;
+  }
+  footer .wrapper .subscribe form input[type=email] {
+    width: 100%;
+    margin-left: 10px;
+  }
+  footer .wrapper .subscribe .socialMedia {
+    margin: 0;
+    padding-left: 42%;
+  }
+}
+@media (max-device-width: 320px) {
+  .ourRestaurants .wrapper .stamp {
+    width: 20%;
+    height: 13%;
+    position: absolute;
+    top: 77px;
+    left: 73.1%;
+  }
+  .hungryClients .wrapper {
+    width: 100%;
+    padding: 80 0px;
+  }
+  .hungryClients .wrapper p i {
+    font-size: 20px;
+    font-size: 1rem;
+  }
+  .hungryClients .wrapper p i.fa-quote-left {
+    position: absolute;
+    left: -3%;
+    top: 54px;
+  }
+  .hungryClients .wrapper p i.fa-quote-right {
+    position: absolute;
+    right: 26.8%;
+    top: 312px;
+  }
+  .hungryClients .wrapper .slider {
+    min-width: 30%;
+  }
+  footer .wrapper .footerColumn .columnContent ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn .columnContent ul li {
+    width: 100%;
   }
 }

@@ -5,7 +5,7 @@
     }
 
     .recipesContainerFlex {
-        display: flex;   
+        display: flex;
     }
         
     .recipesContent {
@@ -25,6 +25,35 @@
         width: 50%;
         
     }
+    
+    .foodMenu {  
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        background-color: $quarternary;
+    
+        
+        i {
+            color: $secondary;
+            padding: 0 19px;
+    
+            &.fa-mug-saucer {
+                padding-left: 15px;
+                padding-right: 13px;    
+            }
+    
+            &.fa-leaf {
+                padding-left: 15px;
+                padding-right: 13px;
+            }
+        }
+    }
+    
+    .foodMenuContent {
+        display: flex; 
+        padding-bottom: 20px;   
+    }
 }
 
 .btn {
@@ -38,33 +67,4 @@
         color: $quinary;
         border: $quinary solid 2px;
     }
-}
-
-.foodMenu {  
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background-color: $quarternary;
-
-    
-    i {
-        color: $secondary;
-        padding: 0 19px;
-
-        &.fa-mug-saucer {
-            padding-left: 15px;
-            padding-right: 13px;    
-        }
-
-        &.fa-leaf {
-            padding-left: 15px;
-            padding-right: 13px;
-        }
-    }
-}
-
-.foodMenuContent {
-    display: flex; 
-    padding-bottom: 20px;   
 }
