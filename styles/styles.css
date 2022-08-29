@@ -854,7 +854,7 @@ header .wrapper {
   width: 17%;
   height: 24%;
   position: absolute;
-  top: 58px;
+  top: 7.5%;
   left: 65.6%;
 }
 
@@ -898,12 +898,12 @@ header .wrapper {
 .hungryClients p i.fa-quote-left {
   position: absolute;
   left: -6.8%;
-  top: 39px;
+  top: 21%;
 }
 .hungryClients p i.fa-quote-right {
   position: absolute;
   right: -5.8%;
-  top: 124px;
+  top: 70%;
 }
 .hungryClients .slider {
   display: -webkit-box;
@@ -1293,7 +1293,7 @@ footer .copyright {
   opacity: 0.8;
 }
 
-@media (max-device-width: 1016px) {
+@media (max-device-width: 1015px) {
   .popularRecipes .recipesContainerFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1320,6 +1320,13 @@ footer .copyright {
   }
   .popularRecipes .recipesContainerFlex .foodMenu .colunm {
     padding: 100px;
+  }
+  .ourRestaurants .wrapper .stamp {
+    width: 18%;
+    height: 19%;
+    position: absolute;
+    top: 14.3%;
+    left: 64.9%;
   }
 }
 @media (max-device-width: 1000px) {
@@ -1349,18 +1356,70 @@ header .navbar .navContainer {
   header .navbar .navContainer {
     display: none;
   }
-  .ourRestaurants .wrapper div {
-    width: inherit;
-  }
-  .ourRestaurants .wrapper div .foodCourtImg {
+  .popularRecipes .recipesContainerFlex .recipesContent {
     width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .recipeImg {
+    width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu {
+    width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu p {
+    padding-bottom: 10px;
+    line-height: 23px;
+    font-size: 12px;
+    font-size: 0.6rem;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
+    max-height: 97%;
+    padding: 16px 6px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu h3 {
+    font-size: 14px;
+    font-size: 0.7rem;
+  }
+  .popularRecipes .foodMenuContent {
+    padding-bottom: 0;
   }
   .ourRestaurants .wrapper .stamp {
     width: 20%;
     height: 19%;
     position: absolute;
-    top: 49px;
-    left: 76.1%;
+    top: 14.8%;
+    left: 63.8%;
+  }
+}
+@media (max-device-width: 892px) {
+  .popularRecipes .recipesContainerFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .popularRecipes .recipesContainerFlex .recipesContent {
+    width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .recipesContent p {
+    line-height: 30px;
+  }
+  .popularRecipes .recipesContainerFlex .recipeImg {
+    width: 100%;
+    margin-top: 2px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu {
+    width: 100%;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
+    min-height: 476px;
+    padding: 15% 5px;
+  }
+  .popularRecipes .recipesContainerFlex .foodMenu .colunm p {
+    font-size: 16px;
+    font-size: 0.8rem;
+  }
+  .popularRecipes .foodMenuContent {
+    padding-bottom: 30px;
   }
 }
 @media (max-device-width: 500px) {
@@ -1431,7 +1490,7 @@ header .navContainer {
     width: 22%;
     height: 17%;
     position: absolute;
-    top: 71px;
+    top: 11%;
     left: 72.1%;
   }
   .hungryClients .wrapper {
@@ -1439,7 +1498,7 @@ header .navContainer {
     padding: 80 0px;
   }
   .hungryClients .wrapper p {
-    width: 92%;
+    width: 80%;
     font-size: 16px;
     font-size: 0.8rem;
   }
@@ -1449,16 +1508,16 @@ header .navContainer {
   }
   .hungryClients .wrapper p i.fa-quote-left {
     position: absolute;
-    left: -3%;
-    top: 48px;
+    left: -8%;
+    top: 18%;
   }
   .hungryClients .wrapper p i.fa-quote-right {
     position: absolute;
-    right: 16.8%;
-    top: 202px;
+    right: 23.8%;
+    top: 90%;
   }
   .hungryClients .wrapper .slider {
-    min-width: 18%;
+    min-width: 22%;
   }
   footer .wrapper {
     width: 100%;
@@ -1531,7 +1590,7 @@ footer .wrapper .footerColumn h5 {
     padding: 0;
   }
 }
-@media (max-device-width: 420px) {
+@media (max-device-width: 496px) {
   .popularRecipes .recipesContainerFlex .foodMenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1557,39 +1616,65 @@ footer .wrapper .footerColumn h5 {
     top: 55px;
     left: 72.1%;
   }
+  .hungryClients .wrapper p {
+    width: 80%;
+  }
   .hungryClients .wrapper p i.fa-quote-left {
     position: absolute;
-    left: -3.5%;
-    top: 48px;
+    left: -6.5%;
+    top: 20%;
   }
   .hungryClients .wrapper p i.fa-quote-right {
     position: absolute;
     right: 20.8%;
-    top: 235px;
-  }
-  .hungryClients .wrapper .slider {
-    min-width: 18%;
-  }
-  footer .wrapper .footerColumn .columnContent ul {
-    padding-left: 0;
-    text-align: center;
-  }
-  footer .wrapper .footerColumn .columnContent ul li {
-    width: 100%;
-  }
-  footer .wrapper .subscribe form {
-    width: 98%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: none;
+    top: 90%;
   }
   footer .wrapper .subscribe form input[type=email] {
-    width: 75%;
+    width: 65%;
   }
-  footer .wrapper .subscribe .socialMedia {
-    margin: 0;
-    padding-left: 42%;
+}
+@media (max-device-width: 410px) {
+  .ourRestaurants .wrapper {
+    width: 100%;
+  }
+  .ourRestaurants .wrapper div {
+    width: inherit;
+  }
+  .ourRestaurants .wrapper div .foodCourtImg {
+    width: 70%;
+  }
+  .ourRestaurants .wrapper .stamp {
+    width: 22%;
+    height: 17%;
+    position: absolute;
+    top: 11%;
+    left: 72.1%;
+  }
+  .hungryClients .wrapper {
+    width: 100%;
+    padding: 80px 0;
+  }
+  .hungryClients .wrapper p {
+    width: 80%;
+    font-size: 16px;
+    font-size: 0.8rem;
+  }
+  .hungryClients .wrapper p i {
+    font-size: 25px;
+    font-size: 1.25rem;
+  }
+  .hungryClients .wrapper p i.fa-quote-left {
+    position: absolute;
+    left: -8%;
+    top: 18%;
+  }
+  .hungryClients .wrapper p i.fa-quote-right {
+    position: absolute;
+    right: 14.8%;
+    top: 91%;
+  }
+  .hungryClients .wrapper .slider {
+    min-width: 22%;
   }
 }
 @media (max-device-width: 375px) {
@@ -1626,13 +1711,6 @@ footer .wrapper .footerColumn h5 {
   .popularRecipes .foodMenuContent {
     padding-bottom: 60px;
   }
-  .ourRestaurants .wrapper .stamp {
-    width: 20%;
-    height: 13%;
-    position: absolute;
-    top: 87px;
-    left: 73.1%;
-  }
   .ourRestaurants .wrapper div p {
     padding: 0 12px;
   }
@@ -1646,21 +1724,18 @@ footer .wrapper .footerColumn h5 {
     font-size: 0.8rem;
   }
   .hungryClients .wrapper p i {
-    font-size: 25px;
-    font-size: 1.25rem;
+    font-size: 20px;
+    font-size: 1rem;
   }
   .hungryClients .wrapper p i.fa-quote-left {
-    position: absolute;
-    left: -3%;
-    top: 48px;
+    left: -2%;
+    top: 18%;
   }
   .hungryClients .wrapper p i.fa-quote-right {
-    position: absolute;
     right: 26.8%;
-    top: 273px;
   }
   .hungryClients .wrapper .slider {
-    min-width: 18%;
+    min-width: 30%;
   }
   footer .wrapper .footerColumn .columnContent ul {
     padding-left: 0;
@@ -1678,40 +1753,148 @@ footer .wrapper .footerColumn h5 {
     padding-left: 42%;
   }
 }
+@media (max-device-width: 353px) {
+  .hungryClients .wrapper {
+    width: 100%;
+  }
+  .hungryClients .wrapper p i {
+    font-size: 18px;
+    font-size: 0.9rem;
+  }
+  .hungryClients .wrapper p i.fa-quote-left {
+    position: absolute;
+    right: 100%;
+    top: 15%;
+  }
+  .hungryClients .wrapper p i.fa-quote-right {
+    position: absolute;
+    right: 10.8%;
+    top: 93%;
+  }
+  .hungryClients .wrapper .slider {
+    min-width: 30%;
+  }
+}
 @media (max-device-width: 320px) {
   .ourRestaurants .wrapper .stamp {
     width: 20%;
     height: 13%;
     position: absolute;
-    top: 77px;
+    top: 15%;
     left: 73.1%;
   }
-  .hungryClients .wrapper {
-    width: 100%;
-    padding: 80 0px;
+  .ourRestaurants .wrapper div p {
+    padding: 0 10px;
+    font-size: 16px;
+    font-size: 0.8rem;
   }
-  .hungryClients .wrapper p i {
-    font-size: 20px;
-    font-size: 1rem;
+  .hungryClients {
+    padding: 50px 0;
   }
   .hungryClients .wrapper p i.fa-quote-left {
     position: absolute;
     left: -3%;
-    top: 54px;
+    top: 16%;
   }
   .hungryClients .wrapper p i.fa-quote-right {
     position: absolute;
-    right: 26.8%;
-    top: 312px;
+    right: 23 0.8%;
+    top: 93%;
   }
   .hungryClients .wrapper .slider {
     min-width: 30%;
   }
-  footer .wrapper .footerColumn .columnContent ul {
-    padding-left: 0;
+  .contact .contactContent {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contactContent .formContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .contact .contactContent .formContainer .wrapper {
+    width: 100%;
+  }
+  .contact .contactContent .formContainer .wrapper h2 {
     text-align: center;
   }
-  footer .wrapper .footerColumn .columnContent ul li {
+  .contact .contactContent .formContainer .wrapper form {
+    padding: 0 10px;
+  }
+  .contact .contactContent .formContainer .wrapper form input,
+.contact .contactContent .formContainer .wrapper form textarea {
+    padding-left: 8px;
     width: 100%;
+  }
+  .contact .contactContent .formContainer .wrapper form input[name=name] {
+    margin-right: 12px;
+  }
+  .contact .contactContent .formContainer .wrapper form textarea {
+    resize: none;
+  }
+  .contact .contactContent .formContainer .wrapper form input[name=subject],
+.contact .contactContent .formContainer .wrapper form textarea {
+    min-width: 98%;
+  }
+  .contact .contactContent .formContainer .wrapper form input,
+.contact .contactContent .formContainer .wrapper form textarea {
+    border: none;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
+  }
+  .contact .contactContent .formContainer .wrapper form button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  .contact .contactContent .formContainer .wrapper form button i {
+    padding-left: 5px;
+  }
+  .contact .contactContent .contactDetailsContainer {
+    margin-top: 70px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .contact .contactContent .contactDetailsContainer .wrapper {
+    margin: 0;
+  }
+  .contact .contactContent .contactDetailsContainer div {
+    min-width: 100%;
+  }
+  .contact .contactContent .contactDetailsContainer .contactDetails h3 {
+    margin: 80px 0 30px;
+  }
+  .contact .contactContent .contactDetailsContainer h5 {
+    margin: 48px 0 15px;
+  }
+  .contact .contactContent .contactDetailsContainer adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 120px;
+  }
+  .contact .contactContent .contactDetailsContainer adress:last-child {
+    padding-bottom: 40px;
+  }
+  .contact .contactBackground {
+    height: 85vh;
+    width: 100%;
+    background-image: url(../assets/contact-2-min.jpeg);
+    background-size: cover;
+    background-position: center;
   }
 }
