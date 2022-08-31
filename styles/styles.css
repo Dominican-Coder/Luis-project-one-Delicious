@@ -1288,13 +1288,62 @@ footer .copyright {
   margin-top: 15px;
 }
 
-.hamburgerMenu div {
-  width: 35px;
-  height: 3px;
-  background-color: black;
-  border-radius: 5px;
-  margin: 6px 0;
+.hamburgerMenu,
+.closeMenuBtn {
+  border: none;
+  font-size: 35px;
+  font-size: 1.75rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.hamburgerMenu:hover, .hamburgerMenu:focus,
+.closeMenuBtn:hover,
+.closeMenuBtn:focus {
+  background-color: transparent;
+}
+
+.slideOutNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2e2e2e;
+  min-height: 80vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  opacity: 0.9;
+  color: #64a604;
+  z-index: 20;
+  left: -450px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.slideOutNav.open {
+  left: 0;
+}
+.slideOutNav .slideNavItemFlex {
+  padding: 40px 0 0 25px;
+}
+.slideOutNav .slideNavItems {
+  padding-bottom: 30px;
+  font-size: 25px;
+  font-size: 1.25rem;
+}
+.slideOutNav .closeMenuBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #2e2e2e;
   opacity: 0.8;
+  padding: 20px;
 }
 
 @media (max-device-width: 1108px) {

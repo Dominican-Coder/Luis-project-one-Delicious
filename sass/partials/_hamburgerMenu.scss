@@ -1,10 +1,59 @@
-.hamburgerMenu {
-    div {
-        width: 35px;
-        height: 3px;
-        background-color: black;
-        border-radius: 5px;
-        margin: 6px 0;
-        opacity: 0.8;
-    }
+.hamburgerMenu,
+.closeMenuBtn {  
+   border: none;  
+   @include fontSize(35);   
+   transition: 0.5s ease-in-out;
+   cursor: pointer;
+
+   &:hover,
+   &:focus {
+    background-color: transparent;
+   }
 }
+
+
+
+.slideOutNav { 
+    display: flex;
+    flex-direction: column;
+    background-color: $primary;
+    min-height: 80vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+    color: $quinary;
+    z-index: 20;
+    left: -450px;
+    transition: 0.3s;
+
+    &.open {
+        left: 0;
+    }
+
+    .slideNavItemFlex{
+        padding: 40px 0 0 25px;
+    }
+
+    .slideNavItems {
+        padding-bottom: 30px;
+        @include fontSize(25);
+    }
+    
+    .closeMenuBtn {
+        display: flex;
+        align-self: flex-end;
+        background-color: $primary;
+        opacity: 0.8;
+        padding:20px;        
+    }
+
+   
+    
+    
+
+    
+}
+
+
