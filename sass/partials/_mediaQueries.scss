@@ -1,3 +1,38 @@
+@media (max-device-width: 1108px) {
+
+    // --------- Contact Page --------->
+    
+    .contact {
+
+        .contactContent {
+
+            .formContainer {
+
+                .wrapper {                        
+
+                    h2 {
+                        text-align: center;
+                    }                            
+                }
+            }
+
+            .contactDetailsContainer {
+
+                div {
+                    min-width: 100%;
+                }
+
+                adress {
+
+                    &:last-child {
+                        padding-bottom: 40px;
+                    }
+                }
+            }    
+        } 
+    }
+}
+
 @media (max-device-width: 1015px) {
     
     .popularRecipes {
@@ -35,7 +70,6 @@
         }
     }
 
-
     //-------- .ourRestaurants Section --------->
 
     .ourRestaurants {
@@ -51,9 +85,7 @@
             }
         }
     }
-
 }
-
 
 @media (max-device-width: 1000px) {
 
@@ -151,90 +183,190 @@
 }
 
 @media (max-device-width: 892px) {
-    //-------- Popular Recipes Section --------->
-        .popularRecipes {
-    
-            .recipesContainerFlex {
-                flex-direction: column;
-    
-    
-                .recipesContent {
-                    width: 100%;
-                    // margin: 40px 0;
-    
-    
-                    p {
-                        line-height: 30px;
-                    }
-                }
-    
-                .recipeImg {
-                    width: 100%;
-                    margin-top: 2px;
-    
-                }
-    
-                .foodMenu {
-                    width: 100%;
-    
-                    .colunm {
-                        min-height: 476px;
-                        padding: 15% 5px;
 
+    //-------- Popular Recipes Section --------->
+    .popularRecipes {
+        
+        .recipesContainerFlex {
+            
+            .foodMenu {
+                
+                .colunm {
+                    // padding: 50px 20px;
+                }
+            }  
+            
+        }        
+    } 
+    
+    // --------- Footer --------->
+    footer {
+        
+        .wrapper {
+            width: 100%;
+            flex-direction: column;
+    
+            p,
+            a {
+                width: 80%;
+                margin: 0 auto;
+                 }
+    
+                 .footerContact {
+                     width: 100%;
+                     text-align: center;
+                     
+                    }
+                    
+                    .footerColumn {
+                        padding-right: 0;
+                        
+                     .columnContent {
+                         
+                         ul {
+                             padding-left: 0;
+                             text-align: center;
+                             
+                             li {
+                                 width: 100%;
+                                }
+                            }
+                        }
+                        
+                        h4,
+                     h5 {
+                         text-align: center;
+                        }
+                        
                         p {
-                        @include fontSize(16);
+                            padding-bottom: 0;
+                     }
+    
+                     .contentBoder {
+                         border: none;
+                        }
+                    }
+    
+                    .subscribe {
+                        text-align: center;
+                        
+                        p {
+                            width: 100%;
+                            padding-bottom: 2px;
+                            padding-left: 5px;
+                        }
+                        
+                        form {
+                            width: 98%;
+                            justify-content: center;
+                         border: none;
+                         
+                         input[type=email] {
+                             width: 36%;
+                             margin-left: 22px;
+                            }
+                        }
+                        
+                        .socialMedia {
+                         padding-left: 42%;
                         }
                     }
                 }
-            }
+    
+             .copyright {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 padding: 0;
+                }
+    }
+            
+    //-------- Popular Recipes Section --------->
+    .blogPageContent {
 
-            .foodMenuContent {               
-                padding-bottom: 30px;
+        
+
+        .relatedPost {
+
+            .postFlex {
+                display: flex;
+               
+                .postContainer {
+                    width: 32%;
+                    margin-right: 25px;
+                    
+
+                    h5 {
+                        @include fontSize(12);
+                    }                   
+                }
             }
         }
 
+        .commentsContainer {
+
+            .commentsImg {
+                margin-right: 3%;
+            }
+
+            .comment {
+               
+                &::before {
+                    
+                    right: 99%;
+                    top: 6px;
+                    border-top: 10px solid transparent;
+                    border-right: 16px solid $quarternary;
+                    border-bottom: 8px solid transparent;                   
+                }
+
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }     
 }
-
-
-@media (max-device-width: 500px) {
-
+        
+@media (max-device-width: 768px) {
+    
     header {
-
+    
         .navbar {
             .logo {
                 padding: 0;
                 @include fontSize(33);
             }
-
+            
             .hamburgerMenu {
                 display: block;
             }
-        }
-
-        .navbar .navContainer {
-            display: none;
-        }
+            }
             
-        .navItemFlex,
-        .navContainer {
-            flex-direction: column;           
-        }
-
-        .shoppingCart {
-            display: flex;
-
-            .search {
-                padding-top: 3px;
+            .navbar .navContainer {
+                display: none;
+            }
+            
+            .navItemFlex,
+            .navContainer {
+                flex-direction: column;
+            }
+            
+            .shoppingCart {
+                display: flex;
+                
+                .search {
+                    padding-top: 3px;
+                }
             }
         }
-    }
     
         //-------- Popular Recipes Section --------->
         .popularRecipes {
-    
+            
             .recipesContainerFlex {
-                flex-direction: column;
-                
+                // flex-direction: column;
+    
     
                 .recipesContent {
                     width: 100%;
@@ -290,7 +422,7 @@
                     left: 72.1%;
                 }
             }
-        }        
+        }
     
         // --------- .hungryClients --------->
     
@@ -326,242 +458,225 @@
                 }
             }
         }
-
-        // --------- Footer --------->
-        footer {
     
-            .wrapper {
-                width: 100%;
+    // --------- Contact Page --------->
+    
+        .contact {
+    
+            .contactContent {
+                height: 100vh;
                 flex-direction: column;
     
-                p,
-                a {
+                .formContainer {
+                    flex-direction: column;
                     width: 80%;
-                    margin: 0 auto;
-                }
     
-                .footerContact {
-                    width: 100%;
-                    text-align: center;
+                    .wrapper {
     
-                }
-    
-                .footerColumn {
-                    padding-right: 0;
-    
-                    .columnContent {
-                    
-                        ul {
-                            padding-left: 0;
+                        h2 {
                             text-align: center;
-                
-                            li {
+                        }
+    
+                        form {
+                            padding: 0 10px;
+    
+    
+                            input,
+                            textarea {
+                                padding-left: 8px;
                                 width: 100%;
+                            }
+    
+                            input[name=name] {
+                                margin-right: 12px;
+                            }
+    
+                            textarea {
+                                resize: none;
+                            }
+    
+    
+                            input[name=subject],
+                            textarea {
+                                min-width: 98%;
+                            }
+    
+                            input,
+                            textarea {
+                                border: none;
+                                background-color: $quarternary;
+                                margin-bottom: 20px;
+                            }
+    
+                            button {
+                                border: 1px solid $quinary;
+                                width: 64%;
+                                padding: 20px;
+                                margin-left: 82px;
+    
+                                i {
+                                    padding-left: 5px;
+                                }
                             }
                         }
                     }
-    
-                    h4,
-                    h5 {
-                        text-align: center;
-                    }
-    
-                    p {
-                        padding-bottom: 0;
-                    }
-    
-                    .contentBoder {
-                        border: none;                        
-                    }
                 }
     
-                .subscribe {
+                .contactDetailsContainer {
+                    margin-top: 70px;
+                    padding: 0;
+                    width: 100%;
                     text-align: center;
     
-                    p {
-                        width: 100%;
-                        padding-bottom: 2px;
-                        padding-left: 5px;
+                    div {
+                        min-width: 100%;
                     }
     
-                    form {
-                        width: 98%;
-                        justify-content: center;
-                        border: none;
+                    adress {
     
-                        input[type=email] {
-                            width: 63%;
-                            margin-left: 10px;
+                        &:last-child {
+                            padding-bottom: 40px;
                         }
                     }
-    
-                    .socialMedia {
-                        padding-left: 42%;
+
+                    p {
+                        padding: 0 100px;
                     }
                 }
+    
             }
     
-            .copyright {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0;
+            .contactBackground {
+                height: 100vh;
             }
-        }  
+        }
 }
 
+@media (max-device-width: 745px) {
 
-@media (max-device-width: 496px) {
 
-//-------- Popular Recipes Section --------->
-    .popularRecipes {
+//-------- Blog Page --------->
+    .blogPageContent {
 
-        .recipesContainerFlex {
-                      
-            .foodMenu {
+        .blogSection {
+
+            .author {
                 flex-direction: column;
-                padding: 0 6px;
+                position: relative;
 
-                .colunm {
-                    min-height: 412px;
-                    margin: 0;
-                    padding-top: 0;                   
-
-                    &:first-child {
-                        padding-top: 75px;
-                    }
-                }
-            }
-        }
-    }
-
-    // --------- .ourRestaurants --------->
-
-    .ourRestaurants {
-
-        min-height: 79vh;
-
-        .wrapper {
-
-            .stamp {
-                width: 22%;
-                height: 17%;
-                position: absolute;
-                top: 55px;
-                left: 72.1%;
-            }
-        }
-    }
-
-
-
-    // --------- .hungryClients --------->
-
-    .hungryClients {
-
-        .wrapper {
-           
-            p {
-                width: 80%;
-                
-                i.fa-quote-left {
+                .authorImgContainer {
+                    width: 30%;
                     position: absolute;
-                    left: -6.5%;
-                    top: 20%;
-                }
-
-                i.fa-quote-right {
-                    position: absolute;
-                    right: 20.8%;
-                    top: 90%;
-                }
-            }            
-        }
-    }
-
-    // --------- Footer --------->
-    footer {
-
-        .wrapper {
-
-            .subscribe {
-
-                form {
+                    top: -9%;
+                    left: 70%;
                     
-                    input[type=email] {
-                        width: 65%;
+                    img {
+                        width: 70px;
+                        height: 69px;
+                        border-radius: 50%;
                     }
+                }
+
+                .aboutAuthor {
+                    background-color: $quarternary;
+                    width: 100%;
+                    margin-left: 0;
+                    padding: 30px;
+
+                    h5 {
+                        padding-top: 12px;
+                    }
+                }
+            }
+        }
+
+        .commentsContainer {
+            flex-direction: column;
+            position: relative;
+
+            .commentsImg {
+                margin-right: 0;
+                position: absolute;
+                top: -10%;
+                left: 83%;
+                z-index: 999;
+
+                img {
+                    width: 83%;
+                    border-radius: 50%;
+                }
+
+            }
+
+            .comment {               
+
+                &::before {
+                    display: none;
                 }                
             }
-        }
-    }
+        }        
+    }  
 }
 
-@media (max-device-width: 410px) {
+@media (max-device-width: 600px) {
 
-    // --------- .ourRestaurants --------->
-
-    .ourRestaurants {
+    //-------- Blog Page --------->
+    .blogPageContent {
 
         .wrapper {
-            width: 100%;
+            width: 95%;
+        }        
 
-            div {
-                width: inherit;
+        .relatedPost {
 
-                .foodCourtImg {
-                    width: 70%;
-                }
-
+            h3 {
+                text-align: center;
             }
 
-            .stamp {
-                width: 22%;
-                height: 17%;
-                position: absolute;
-                top: 11%;
-                left: 72.1%;
+            .postFlex {
+                display: flex;
+                flex-direction: column;
+
+                .postContainer {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
             }
         }
-    }
 
-    // --------- .hungryClients --------->
+        .commentCounter {
+            display: flex;
+            justify-content: center;            
+        }
 
-    .hungryClients {
+        .commentForm {
 
-        .wrapper {
-            width: 100%;
-            padding: 80px 0;
-
+            h3,
             p {
-                width: 80%;
-                @include fontSize(16);
-
-                i {
-                    @include fontSize(25);
-                }
-
-                i.fa-quote-left {
-                    position: absolute;
-                    left: -8%;
-                    top: 18%;
-                }
-
-                i.fa-quote-right {
-                    position: absolute;
-                    right: 14.8%;
-                    top: 91%;
-                }
+                text-align: center;
             }
 
-            .slider {
-                min-width: 22%;
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+                    margin-bottom: 2%;
+
+                    &:nth-child(6) {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
-    }
+    } 
 }
 
-@media (max-device-width: 375px) {
+@media (max-device-width: 480px) {
 
     //-------- Popular Recipes Section --------->
     .popularRecipes {
@@ -687,16 +802,52 @@
                 }
             }
         }
-    }    
-}
+    } 
+    
+    // --------- Contact Page --------->
 
+    .contact {
+
+        .contactContent {
+
+            .formContainer {
+                width: 100%;
+                
+                .wrapper {
+                    width: 100%;                       
+                }
+            }
+
+            .contactDetailsContainer {
+                margin-top: 70px;
+                padding: 0;
+                width: 100%;
+                text-align: center;
+
+                div {
+                    min-width: 100%;
+                }
+
+                adress {
+
+                    &:last-child {
+                        padding-bottom: 40px;
+                    }
+                }
+            }
+
+        }
+    }
+
+        
+}
 
 @media (max-device-width: 353px) {
 
     // --------- .hungryClients --------->
     
     .hungryClients {
-
+        
         .wrapper {
             width: 100%;
 
@@ -725,11 +876,53 @@
         }
     }
 
-    
+    // --------- .Blog Page --------->
 
+    .blogPageContent {
 
+        .blogSection {
+
+            .author {
+
+                .authorImgContainer {
+                    width: 30%;
+                    position: absolute;
+                    top: -5%;
+                    left: 71%;
+
+                    img {
+                        width: 50px;
+                        height: 59px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .commentsContainer {
+
+            .commentsImg {
+                margin-right: 0;
+                position: absolute;
+                top: -6%;
+                left: 83%;
+                z-index: 999;
+
+                img {
+                    width: 83%;
+                    border-radius: 50%;
+                }
+            }
+            
+            .comment {
+
+                p {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
 }
-
 
 @media (max-device-width: 320px) {    
 
@@ -743,7 +936,7 @@
                 width: 20%;
                 height: 13%;
                 position: absolute;
-                top: 15%;
+                top: 16.8%;
                 left: 73.1%;
             } 
             
@@ -785,121 +978,35 @@
             }
         }
     }
-    
-    
+
+
         // --------- Contact Page --------->
+    
+        .contact {
+    
+            .contactContent {
 
-    .contact {
-        // height: 1400px;
-
-        .contactContent {
-            height: 100vh;
-            flex-direction: column;
-
-            .formContainer {
-                flex-direction: column;
-                width: 100%;
-
-                .wrapper {
-                    width: 100%;
-
-                    h2 {
-                        text-align: center;
-                    }
-
-                    form {
-                        padding: 0 10px;
-
-
-                        input,
-                        textarea {
-                            padding-left: 8px;
-                            width: 100%;
-                        }
-
-                        input[name=name] {
-                            margin-right: 12px;
-                        }
-
-                        textarea {
-                            resize: none;
-                        }
-
-
-                        input[name=subject],
-                        textarea {
-                            min-width: 98%;
-                        }
-
-                        input,
-                        textarea {
-                            border: none;
-                            background-color: $quarternary;
-                            margin-bottom: 20px;
-                        }
-
-                        button {
-                            border: none;
-                            background-color: inherit;
-                            cursor: pointer;
-
-                            i {
-                                padding-left: 5px;
+                .formContainer {
+    
+                    .wrapper {
+    
+                        form { 
+    
+                            button {
+                                width: 100%;
+                                margin-left: 0;
+    
+                                i {
+                                    padding-left: 5px;
+                                }
                             }
                         }
                     }
                 }
             }
-
-            .contactDetailsContainer {
-                margin-top: 70px;
-                padding: 0;
-                width: 100%;
-                text-align: center;
-
-                .wrapper {
-                    margin: 0;
-                }
-
-                div {
-                    min-width: 100%;
-                }
-
-                .contactDetails {
-                    h3 {
-                        margin: 80px 0 30px;
-                    }
-
-                }
-
-                h5 {
-                    margin: 48px 0 15px;
-                }
-
-                adress {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    height: 120px;
-
-                    &:last-child {
-                        padding-bottom: 40px;
-                    }
-                }
+    
+            .contactBackground {
+                height: 900px;             
             }
         }
-
-        .contactBackground {
-            height: 85vh;
-            width: 100%;
-            background-image: url(../assets/contact-2-min.jpeg);
-            background-size: cover;
-            background-position: center;
-        }
-    }
-
-   
-    
-    
-
 }

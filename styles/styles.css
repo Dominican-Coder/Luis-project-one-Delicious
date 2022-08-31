@@ -1168,6 +1168,9 @@ footer .copyright {
   height: 40px;
 }
 .blogPageContent .blogSection .shareSection .share ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 10%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1188,8 +1191,8 @@ footer .copyright {
   width: 15%;
 }
 .blogPageContent .blogSection .author .authorImgContainer img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 .blogPageContent .blogSection .author .aboutAuthor {
   background-color: #f6f6f6;
@@ -1213,7 +1216,7 @@ footer .copyright {
 }
 .blogPageContent .relatedPost .postFlex .postContainer {
   width: 32%;
-  margin-right: 25px;
+  margin-right: 2%;
 }
 .blogPageContent .relatedPost .postFlex .postContainer:last-child {
   margin-right: 0;
@@ -1226,8 +1229,7 @@ footer .copyright {
   padding-top: 5px;
 }
 .blogPageContent .commentsContainer .commentsImg {
-  width: 10%;
-  margin-right: 25px;
+  margin-right: 2%;
 }
 .blogPageContent .commentsContainer .comment {
   background-color: #f6f6f6;
@@ -1261,10 +1263,12 @@ footer .copyright {
   margin-top: 15px;
 }
 .blogPageContent .commentForm form input {
-  width: 32.3333333333%;
+  width: 32%;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
   height: 35px;
-  margin-right: 14px;
-  padding: 8px;
+  margin-right: 2%;
+  padding: 14px;
   border-radius: 0;
   border: 1px solid rgba(184, 182, 182, 0.3647058824);
 }
@@ -1293,6 +1297,17 @@ footer .copyright {
   opacity: 0.8;
 }
 
+@media (max-device-width: 1108px) {
+  .contact .contactContent .formContainer .wrapper h2 {
+    text-align: center;
+  }
+  .contact .contactContent .contactDetailsContainer div {
+    min-width: 100%;
+  }
+  .contact .contactContent .contactDetailsContainer adress:last-child {
+    padding-bottom: 40px;
+  }
+}
 @media (max-device-width: 1015px) {
   .popularRecipes .recipesContainerFlex {
     -webkit-box-orient: vertical;
@@ -1391,38 +1406,104 @@ header .navbar .navContainer {
   }
 }
 @media (max-device-width: 892px) {
-  .popularRecipes .recipesContainerFlex {
+  footer .wrapper {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .popularRecipes .recipesContainerFlex .recipesContent {
+  footer .wrapper p,
+footer .wrapper a {
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer .wrapper .footerContact {
+    width: 100%;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn {
+    padding-right: 0;
+  }
+  footer .wrapper .footerColumn .columnContent ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  footer .wrapper .footerColumn .columnContent ul li {
     width: 100%;
   }
-  .popularRecipes .recipesContainerFlex .recipesContent p {
-    line-height: 30px;
+  footer .wrapper .footerColumn h4,
+footer .wrapper .footerColumn h5 {
+    text-align: center;
   }
-  .popularRecipes .recipesContainerFlex .recipeImg {
+  footer .wrapper .footerColumn p {
+    padding-bottom: 0;
+  }
+  footer .wrapper .footerColumn .contentBoder {
+    border: none;
+  }
+  footer .wrapper .subscribe {
+    text-align: center;
+  }
+  footer .wrapper .subscribe p {
     width: 100%;
-    margin-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
   }
-  .popularRecipes .recipesContainerFlex .foodMenu {
-    width: 100%;
+  footer .wrapper .subscribe form {
+    width: 98%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
   }
-  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
-    min-height: 476px;
-    padding: 15% 5px;
+  footer .wrapper .subscribe form input[type=email] {
+    width: 36%;
+    margin-left: 22px;
   }
-  .popularRecipes .recipesContainerFlex .foodMenu .colunm p {
-    font-size: 16px;
-    font-size: 0.8rem;
+  footer .wrapper .subscribe .socialMedia {
+    padding-left: 42%;
   }
-  .popularRecipes .foodMenuContent {
-    padding-bottom: 30px;
+  footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .blogPageContent .relatedPost .postFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .blogPageContent .relatedPost .postFlex .postContainer {
+    width: 32%;
+    margin-right: 25px;
+  }
+  .blogPageContent .relatedPost .postFlex .postContainer h5 {
+    font-size: 12px;
+    font-size: 0.6rem;
+  }
+  .blogPageContent .commentsContainer .commentsImg {
+    margin-right: 3%;
+  }
+  .blogPageContent .commentsContainer .comment::before {
+    right: 99%;
+    top: 6px;
+    border-top: 10px solid transparent;
+    border-right: 16px solid #f6f6f6;
+    border-bottom: 8px solid transparent;
+  }
+  .blogPageContent .commentsContainer .comment p {
+    padding-bottom: 10px;
   }
 }
-@media (max-device-width: 500px) {
+@media (max-device-width: 768px) {
   header .navbar .logo {
     padding: 0;
     font-size: 33px;
@@ -1448,12 +1529,6 @@ header .navContainer {
   }
   header .shoppingCart .search {
     padding-top: 3px;
-  }
-  .popularRecipes .recipesContainerFlex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .popularRecipes .recipesContainerFlex .recipesContent {
     width: 100%;
@@ -1519,165 +1594,177 @@ header .navContainer {
   .hungryClients .wrapper .slider {
     min-width: 22%;
   }
-  footer .wrapper {
-    width: 100%;
+  .contact .contactContent {
+    height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  footer .wrapper p,
-footer .wrapper a {
+  .contact .contactContent .formContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 80%;
-    margin: 0 auto;
   }
-  footer .wrapper .footerContact {
-    width: 100%;
+  .contact .contactContent .formContainer .wrapper h2 {
     text-align: center;
   }
-  footer .wrapper .footerColumn {
-    padding-right: 0;
+  .contact .contactContent .formContainer .wrapper form {
+    padding: 0 10px;
   }
-  footer .wrapper .footerColumn .columnContent ul {
-    padding-left: 0;
-    text-align: center;
-  }
-  footer .wrapper .footerColumn .columnContent ul li {
+  .contact .contactContent .formContainer .wrapper form input,
+.contact .contactContent .formContainer .wrapper form textarea {
+    padding-left: 8px;
     width: 100%;
   }
-  footer .wrapper .footerColumn h4,
-footer .wrapper .footerColumn h5 {
-    text-align: center;
+  .contact .contactContent .formContainer .wrapper form input[name=name] {
+    margin-right: 12px;
   }
-  footer .wrapper .footerColumn p {
-    padding-bottom: 0;
+  .contact .contactContent .formContainer .wrapper form textarea {
+    resize: none;
   }
-  footer .wrapper .footerColumn .contentBoder {
+  .contact .contactContent .formContainer .wrapper form input[name=subject],
+.contact .contactContent .formContainer .wrapper form textarea {
+    min-width: 98%;
+  }
+  .contact .contactContent .formContainer .wrapper form input,
+.contact .contactContent .formContainer .wrapper form textarea {
     border: none;
+    background-color: #f6f6f6;
+    margin-bottom: 20px;
   }
-  footer .wrapper .subscribe {
-    text-align: center;
+  .contact .contactContent .formContainer .wrapper form button {
+    border: 1px solid #64a604;
+    width: 64%;
+    padding: 20px;
+    margin-left: 82px;
   }
-  footer .wrapper .subscribe p {
-    width: 100%;
-    padding-bottom: 2px;
+  .contact .contactContent .formContainer .wrapper form button i {
     padding-left: 5px;
   }
-  footer .wrapper .subscribe form {
-    width: 98%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    border: none;
+  .contact .contactContent .contactDetailsContainer {
+    margin-top: 70px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
   }
-  footer .wrapper .subscribe form input[type=email] {
-    width: 63%;
-    margin-left: 10px;
+  .contact .contactContent .contactDetailsContainer div {
+    min-width: 100%;
   }
-  footer .wrapper .subscribe .socialMedia {
-    padding-left: 42%;
+  .contact .contactContent .contactDetailsContainer adress:last-child {
+    padding-bottom: 40px;
   }
-  footer .copyright {
+  .contact .contactContent .contactDetailsContainer p {
+    padding: 0 100px;
+  }
+  .contact .contactBackground {
+    height: 100vh;
+  }
+}
+@media (max-device-width: 745px) {
+  .blogPageContent .blogSection .author {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .blogPageContent .blogSection .author .authorImgContainer {
+    width: 30%;
+    position: absolute;
+    top: -9%;
+    left: 70%;
+  }
+  .blogPageContent .blogSection .author .authorImgContainer img {
+    width: 70px;
+    height: 69px;
+    border-radius: 50%;
+  }
+  .blogPageContent .blogSection .author .aboutAuthor {
+    background-color: #f6f6f6;
+    width: 100%;
+    margin-left: 0;
+    padding: 30px;
+  }
+  .blogPageContent .blogSection .author .aboutAuthor h5 {
+    padding-top: 12px;
+  }
+  .blogPageContent .commentsContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .blogPageContent .commentsContainer .commentsImg {
+    margin-right: 0;
+    position: absolute;
+    top: -10%;
+    left: 83%;
+    z-index: 999;
+  }
+  .blogPageContent .commentsContainer .commentsImg img {
+    width: 83%;
+    border-radius: 50%;
+  }
+  .blogPageContent .commentsContainer .comment::before {
+    display: none;
+  }
+}
+@media (max-device-width: 600px) {
+  .blogPageContent .wrapper {
+    width: 95%;
+  }
+  .blogPageContent .relatedPost h3 {
+    text-align: center;
+  }
+  .blogPageContent .relatedPost .postFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPageContent .relatedPost .postFlex .postContainer {
+    width: 100%;
+  }
+  .blogPageContent .relatedPost .postFlex .postContainer img {
+    width: 100%;
+  }
+  .blogPageContent .commentCounter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
   }
-}
-@media (max-device-width: 496px) {
-  .popularRecipes .recipesContainerFlex .foodMenu {
+  .blogPageContent .commentForm h3,
+.blogPageContent .commentForm p {
+    text-align: center;
+  }
+  .blogPageContent .commentForm form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 6px;
   }
-  .popularRecipes .recipesContainerFlex .foodMenu .colunm {
-    min-height: 412px;
-    margin: 0;
-    padding-top: 0;
+  .blogPageContent .commentForm form input {
+    width: 100%;
+    margin-bottom: 2%;
   }
-  .popularRecipes .recipesContainerFlex .foodMenu .colunm:first-child {
-    padding-top: 75px;
-  }
-  .ourRestaurants {
-    min-height: 79vh;
-  }
-  .ourRestaurants .wrapper .stamp {
-    width: 22%;
-    height: 17%;
-    position: absolute;
-    top: 55px;
-    left: 72.1%;
-  }
-  .hungryClients .wrapper p {
-    width: 80%;
-  }
-  .hungryClients .wrapper p i.fa-quote-left {
-    position: absolute;
-    left: -6.5%;
-    top: 20%;
-  }
-  .hungryClients .wrapper p i.fa-quote-right {
-    position: absolute;
-    right: 20.8%;
-    top: 90%;
-  }
-  footer .wrapper .subscribe form input[type=email] {
-    width: 65%;
+  .blogPageContent .commentForm form input:nth-child(6) {
+    margin-bottom: 0;
   }
 }
-@media (max-device-width: 410px) {
-  .ourRestaurants .wrapper {
-    width: 100%;
-  }
-  .ourRestaurants .wrapper div {
-    width: inherit;
-  }
-  .ourRestaurants .wrapper div .foodCourtImg {
-    width: 70%;
-  }
-  .ourRestaurants .wrapper .stamp {
-    width: 22%;
-    height: 17%;
-    position: absolute;
-    top: 11%;
-    left: 72.1%;
-  }
-  .hungryClients .wrapper {
-    width: 100%;
-    padding: 80px 0;
-  }
-  .hungryClients .wrapper p {
-    width: 80%;
-    font-size: 16px;
-    font-size: 0.8rem;
-  }
-  .hungryClients .wrapper p i {
-    font-size: 25px;
-    font-size: 1.25rem;
-  }
-  .hungryClients .wrapper p i.fa-quote-left {
-    position: absolute;
-    left: -8%;
-    top: 18%;
-  }
-  .hungryClients .wrapper p i.fa-quote-right {
-    position: absolute;
-    right: 14.8%;
-    top: 91%;
-  }
-  .hungryClients .wrapper .slider {
-    min-width: 22%;
-  }
-}
-@media (max-device-width: 375px) {
+@media (max-device-width: 480px) {
   .popularRecipes .recipesContainerFlex .recipesContent p {
     padding: 30px 12px;
   }
@@ -1752,6 +1839,24 @@ footer .wrapper .footerColumn h5 {
     margin: 0;
     padding-left: 42%;
   }
+  .contact .contactContent .formContainer {
+    width: 100%;
+  }
+  .contact .contactContent .formContainer .wrapper {
+    width: 100%;
+  }
+  .contact .contactContent .contactDetailsContainer {
+    margin-top: 70px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .contact .contactContent .contactDetailsContainer div {
+    min-width: 100%;
+  }
+  .contact .contactContent .contactDetailsContainer adress:last-child {
+    padding-bottom: 40px;
+  }
 }
 @media (max-device-width: 353px) {
   .hungryClients .wrapper {
@@ -1774,13 +1879,38 @@ footer .wrapper .footerColumn h5 {
   .hungryClients .wrapper .slider {
     min-width: 30%;
   }
+  .blogPageContent .blogSection .author .authorImgContainer {
+    width: 30%;
+    position: absolute;
+    top: -5%;
+    left: 71%;
+  }
+  .blogPageContent .blogSection .author .authorImgContainer img {
+    width: 50px;
+    height: 59px;
+    border-radius: 50%;
+  }
+  .blogPageContent .commentsContainer .commentsImg {
+    margin-right: 0;
+    position: absolute;
+    top: -6%;
+    left: 83%;
+    z-index: 999;
+  }
+  .blogPageContent .commentsContainer .commentsImg img {
+    width: 83%;
+    border-radius: 50%;
+  }
+  .blogPageContent .commentsContainer .comment p {
+    padding: 10px 0;
+  }
 }
 @media (max-device-width: 320px) {
   .ourRestaurants .wrapper .stamp {
     width: 20%;
     height: 13%;
     position: absolute;
-    top: 15%;
+    top: 16.8%;
     left: 73.1%;
   }
   .ourRestaurants .wrapper div p {
@@ -1804,97 +1934,14 @@ footer .wrapper .footerColumn h5 {
   .hungryClients .wrapper .slider {
     min-width: 30%;
   }
-  .contact .contactContent {
-    height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact .contactContent .formContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-  }
-  .contact .contactContent .formContainer .wrapper {
-    width: 100%;
-  }
-  .contact .contactContent .formContainer .wrapper h2 {
-    text-align: center;
-  }
-  .contact .contactContent .formContainer .wrapper form {
-    padding: 0 10px;
-  }
-  .contact .contactContent .formContainer .wrapper form input,
-.contact .contactContent .formContainer .wrapper form textarea {
-    padding-left: 8px;
-    width: 100%;
-  }
-  .contact .contactContent .formContainer .wrapper form input[name=name] {
-    margin-right: 12px;
-  }
-  .contact .contactContent .formContainer .wrapper form textarea {
-    resize: none;
-  }
-  .contact .contactContent .formContainer .wrapper form input[name=subject],
-.contact .contactContent .formContainer .wrapper form textarea {
-    min-width: 98%;
-  }
-  .contact .contactContent .formContainer .wrapper form input,
-.contact .contactContent .formContainer .wrapper form textarea {
-    border: none;
-    background-color: #f6f6f6;
-    margin-bottom: 20px;
-  }
   .contact .contactContent .formContainer .wrapper form button {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
+    width: 100%;
+    margin-left: 0;
   }
   .contact .contactContent .formContainer .wrapper form button i {
     padding-left: 5px;
   }
-  .contact .contactContent .contactDetailsContainer {
-    margin-top: 70px;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .contact .contactContent .contactDetailsContainer .wrapper {
-    margin: 0;
-  }
-  .contact .contactContent .contactDetailsContainer div {
-    min-width: 100%;
-  }
-  .contact .contactContent .contactDetailsContainer .contactDetails h3 {
-    margin: 80px 0 30px;
-  }
-  .contact .contactContent .contactDetailsContainer h5 {
-    margin: 48px 0 15px;
-  }
-  .contact .contactContent .contactDetailsContainer adress {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 120px;
-  }
-  .contact .contactContent .contactDetailsContainer adress:last-child {
-    padding-bottom: 40px;
-  }
   .contact .contactBackground {
-    height: 85vh;
-    width: 100%;
-    background-image: url(../assets/contact-2-min.jpeg);
-    background-size: cover;
-    background-position: center;
+    height: 900px;
   }
 }
